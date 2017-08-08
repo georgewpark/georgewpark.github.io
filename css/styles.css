@@ -278,11 +278,12 @@ footer p {
 footer a {
 	color: #fff;
 	text-shadow: 2px 2px rgba(0,0,0,.5);
-	transition: color .5s;
+	transition: color .5s, letter-spacing .5s;
 }
 
 footer a:hover {
 	color: #ccc;
+	letter-spacing: 1px;
 }
 
 /* Animations */
