@@ -283,7 +283,7 @@ footer a {
 
 footer a:hover {
 	color: #ccc;
-	letter-spacing: 1px;
+	letter-spacing: 1.1px;
 }
 
 /* Animations */
@@ -317,11 +317,7 @@ footer a:hover {
 	section .box {
 		width: 50%;
 	}
-
-	#about p {
-		text-align: left;
-	}
-
+	
 	#map {
 		width: 100%;
 	}
@@ -343,7 +339,8 @@ footer a:hover {
 	}
 
 	#about p {
-		font-size: 16px;
+		font-size: 18px;
+		text-align: center;
 	}
 
 	section .box {
@@ -357,6 +354,6 @@ footer a:hover {
 	}
 
 	#email, #social-section li {
-		font-size: 22px;
+		font-size: 23px;
 	}
 }
