@@ -29,11 +29,6 @@ a {
 	text-decoration: none;
 }
 
-::selection {
-  background: #e79c00;
-  color: #fff;
-}
-
 /* Header Styles */
 
 header {
