@@ -29,8 +29,10 @@ a {
 	text-decoration: none;
 }
 
+
 ::selection {
-  background: limegreen;
+  background: #e79c00;
+  color: #fff;
 }
 
 /* Header Styles */
