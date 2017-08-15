@@ -36,10 +36,16 @@ a {
 /* Header Styles */
 
 header {
+	display: flex;
+	align-items: center;
 	height: 600px;
 	background: url('../img/header.jpg') no-repeat 55% 50% fixed;
 	background-size: cover;
 	box-shadow: 0 0 10px #000;
+}
+
+header .container {
+	flex: 1;
 }
 
 header hgroup {
@@ -48,12 +54,13 @@ header hgroup {
 
 header h1 {
 	font-size: 72px;
-	margin: 230px 0 0;
+	margin: 0;
 	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 header h2 {
 	font-size: 32px;
+	margin-bottom: 0;
 	text-indent: 6px;
 	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
@@ -317,7 +324,7 @@ footer a:hover {
 	section .box {
 		width: 50%;
 	}
-	
+
 	#map {
 		width: 100%;
 	}
