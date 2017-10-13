@@ -70,7 +70,7 @@ header h2 {
 /* Section Styles */
 
 section h3 {
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
 	margin-top: 50px;
 	transition: letter-spacing 1s;
@@ -85,7 +85,6 @@ section h4 {
 
 #about {
 	perspective: 800px;
-	margin-bottom: 50px;
 }
 
 #about .container {
@@ -111,12 +110,16 @@ section h4 {
 }
 
 #about p {
-	margin: 35px auto 50px;
+	margin: 30px auto 50px;
 	max-width: 830px;
 	text-align: left;
 }
 
 /* Portfolio Section */
+
+#portfolio {
+	text-align: center;
+}
 
 #boxes {
 	display: grid;
@@ -140,6 +143,7 @@ section h4 {
 
 #work {
 	margin-bottom: 50px;
+
 }
 
 #work-filters {
@@ -173,7 +177,7 @@ section h4 {
 	display: flex;
 	width: 80%;
 	height: 220px;
-	border: 1px solid black;
+	border: 1px solid #181818;
 	margin: 0 auto 50px;
 }
 
@@ -192,7 +196,7 @@ section h4 {
 }
 
 #email {
-	color: #000;
+	color: #181818;
 	font-size: 25px;
 	transition: letter-spacing .5s;
 }
@@ -226,7 +230,7 @@ section h4 {
 }
 
 #social-section a {
-	color: #000;
+	color: #181818;
 	margin-left: -4px;
 	padding: 0 18px;
 	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82);
