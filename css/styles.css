@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-	max-width: 960px;
+	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -130,7 +130,7 @@ section h4 {
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: 15px;
 }
 
 .tile {
@@ -177,8 +177,8 @@ section h4 {
 .map {
 	display: flex;
 	width: 80%;
-	height: 220px;
-	border: 1px solid #181818;
+	height: 240px;
+	border: 1px solid #ccc;
 	margin: 0 auto 50px;
 }
 
