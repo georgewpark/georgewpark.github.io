@@ -2,8 +2,8 @@
 /* Global Styles */
 
 body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #f4f4f4;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #f6f6f6;
 	color: #181818;
 	margin: 0;
 	padding: 0;
@@ -28,6 +28,11 @@ a {
 
 img {
 	vertical-align: middle;
+}
+
+::selection {
+	background-color: #974AB2;
+	color: #fff;
 }
 
 /* Header Styles */
@@ -108,7 +113,7 @@ section h4 {
 
 .about-section  p {
 	margin: 30px auto 50px;
-	max-width: 830px;
+	max-width: 840px;
 	text-align: left;
 }
 
@@ -192,7 +197,7 @@ section h4 {
 }
 
 .email-container a {
-	color: #181818;
+	color: #040404;
 	font-size: 25px;
 	transition: letter-spacing .5s;
 }
@@ -226,9 +231,9 @@ section h4 {
 }
 
 .social-container a {
-	color: #181818;
+	color: #040404;
 	margin-left: -4px;
-	padding: 0 18px;
+	padding: 0 12px;
 	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82);
 }
 
