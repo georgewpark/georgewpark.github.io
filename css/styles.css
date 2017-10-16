@@ -16,10 +16,6 @@ body {
 	overflow: hidden;
 }
 
-#about .container, #portfolio .container{
-	border-bottom: 1px solid #ccc;
-}
-
 p {
 	font-size: 20px;
 	line-height: 1.8;
@@ -37,20 +33,17 @@ img {
 /* Header Styles */
 
 header {
-	display: flex;
-	align-items: center;
-	height: 600px;
 	background: url('../img/header_large.jpg') no-repeat 55%;
 	background-size: cover;
 	box-shadow: 0 0 10px #000;
+	color: #fff;
 }
 
 header .container {
-	flex: 1;
-}
-
-header hgroup {
-	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 600px;
 }
 
 header h1 {
@@ -62,7 +55,7 @@ header h1 {
 header h2 {
 	font-size: 32px;
 	font-weight: 400;
-	margin-bottom: 0;
+	margin: 24px 0 0;
 	text-indent: 6px;
 	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
@@ -81,35 +74,39 @@ section h4 {
 	margin: 0 0 25px;
 }
 
+.about-section .container, .portfolio-section .container{
+	border-bottom: 1px solid #ccc;
+}
+
 /* About Section Styles */
 
-#about {
+.about-section {
 	perspective: 800px;
 }
 
-#about .container {
+.about-section  .container {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#about h3 {
+.about-section  h3 {
 	flex-basis: 100%;
 }
 
-#about img {
+.about-section  img {
 	display: inline-block;
 	border-radius: 50%;
 	flex-basis: 250px;
 	transition: transform .5s;
 }
 
-#headshot-container:hover img {
+.headshot-container:hover img {
 	transform: rotateY(360deg);
 }
 
-#about p {
+.about-section  p {
 	margin: 30px auto 50px;
 	max-width: 830px;
 	text-align: left;
@@ -117,42 +114,41 @@ section h4 {
 
 /* Portfolio Section */
 
-#portfolio {
+.portfolio-section {
 	text-align: center;
 }
 
-#boxes {
+.portfolio {
+	margin-bottom: 50px;
+}
+
+.gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 }
 
-.box {
+.tile {
 	cursor: pointer;
 	overflow: hidden;
 }
 
-.box img {
+.tile img {
 	width: 100%;
 	transition: transform .5s;
 }
 
-.box:hover > img {
+.tile:hover > img {
 	transform: scale(1.2);
 }
 
-#work {
-	margin-bottom: 50px;
-
-}
-
-#work-filters {
+.portfolio-filters {
 	display: none;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
-#work-filters a {
+.portfolio-filters a {
 	background: #ccc;
 	font-size: 18px;
 	color: #000;
@@ -160,20 +156,20 @@ section h4 {
 	padding: 10px;
 }
 
-#work-filters a.current, #work-filters a:hover {
+.portfolio-filters a.current, .portfolio-filters a:hover {
 	/*border-bottom: 2px solid #333;*/
 	background: #999;
 }
 
 /* Contact Section */
 
-#contact {
+.contact-section {
 	text-align: center;
 }
 
 /* Map Section */
 
-#map {
+.map {
 	display: flex;
 	width: 80%;
 	height: 220px;
@@ -181,7 +177,7 @@ section h4 {
 	margin: 0 auto 50px;
 }
 
-#map span {
+.map span {
 	font-size: 20px;
 	font-weight: 700;
 	margin: auto;
@@ -189,75 +185,75 @@ section h4 {
 
 /* Email Section */
 
-#email-section {
+.email-container {
 	float: left;
 	width: 50%;
 	margin-bottom: 50px;
 }
 
-#email {
+.email-container a {
 	color: #181818;
 	font-size: 25px;
 	transition: letter-spacing .5s;
 }
 
-#email:hover {
+.email-container a:hover {
 	letter-spacing: 1.2px;
 }
 
 /* Social Section */
 
-#social-section {
+.social-container {
 	float: left;
 	width: 50%;
 }
 
-#social-section ul {
+.social-container ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#social-section li {
+.social-container li {
 	font-size: 30px;
 	display: inline-block;
 	border-right: 1px solid #ccc;
 	margin-bottom: 10px;
 }
 
-#social-section li:last-child {
+.social-container li:last-child {
 	border-right: none;
 }
 
-#social-section a {
+.social-container a {
 	color: #181818;
 	margin-left: -4px;
 	padding: 0 18px;
 	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82);
 }
 
-#social-section a:hover {
+.social-container a:hover {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	transform: scale(1.1);
 }
 
-#facebook:hover {
+.facebook:hover {
 	color: #3b5998;
 }
 
-#twitter:hover {
+.twitter:hover {
 	color: #55acee;
 }
 
-#instagram:hover {
+.instagram:hover {
 	color: #e95950;
 }
 
-#linkedin:hover {
+.linkedin:hover {
 	color: #007bb5;
 }
 
-#github:hover {
+.github:hover {
 	color: #24292e;
 }
 
@@ -304,11 +300,12 @@ footer a:hover {
 @media (max-width: 800px) {
 
 	header {
-		text-align: center;
 		background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../img/header_small.jpg') no-repeat center;
 	}
 
 	header .container {
+		align-items: center;
+		text-align: center;
 		padding: 0;
 	}
 
@@ -320,15 +317,15 @@ footer a:hover {
 		font-size: 28px;
 	}
 
-	#boxes {
+	.gallery {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	#map {
+	.map {
 		width: 100%;
 	}
 
-	#email-section, #social-section {
+	.email-container, .social-container {
 		float: none;
 		width: 100%;
 	}
@@ -344,11 +341,11 @@ footer a:hover {
 		font-size: 25px;
 	}
 
-	#boxes {
+	.gallery {
 		grid-template-columns: 1fr;
 	}
 
-	#email, #social-section li {
+	.email-container a, .social-container li {
 		font-size: 22px;
 	}
 }
