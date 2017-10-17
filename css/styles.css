@@ -127,6 +127,7 @@ section h4 {
 }
 
 .tile {
+	display: inline-block;
 	cursor: pointer;
 	overflow: hidden;
 }
