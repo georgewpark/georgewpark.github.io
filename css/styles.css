@@ -31,7 +31,7 @@ img {
 }
 
 ::selection {
-	background-color: #974AB2;
+	background-color: #2b3223;
 	color: #fff;
 }
 
@@ -168,15 +168,25 @@ section h4 {
 
 /* Contact Section */
 
-.contact-section {
+.contact-section .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
+}
+
+.contact-section h3 {
+	flex-basis: 100%;
 }
 
 /* Map Section */
 
+.map-container {
+	flex-basis: 80%;
+}
+
 .map {
 	display: flex;
-	width: 80%;
 	height: 240px;
 	border: 1px solid #ccc;
 	margin: 0 auto 50px;
@@ -191,8 +201,7 @@ section h4 {
 /* Email Section */
 
 .email-container {
-	float: left;
-	width: 50%;
+	flex-basis: 50%;
 	margin-bottom: 50px;
 }
 
@@ -209,8 +218,7 @@ section h4 {
 /* Social Section */
 
 .social-container {
-	float: left;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .social-container ul {
@@ -326,13 +334,8 @@ footer a:hover {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.map {
-		width: 100%;
-	}
-
-	.email-container, .social-container {
-		float: none;
-		width: 100%;
+	.contact-section .container {
+		flex-direction: column;
 	}
 }
 
