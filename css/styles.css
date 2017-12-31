@@ -42,10 +42,30 @@ img {
 /* Header Styles */
 
 .main-header {
-	background: url('../img/header_large.jpg') no-repeat 55%;
-	background-size: cover;
+	height: 60em;
 	box-shadow: 0 0 1em #000;
 	color: #fff;
+	overflow: hidden;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    position: absolute;
+    top: 0;
+    height: 60em;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.45);    
 }
 
 .main-header .container {
@@ -325,16 +345,6 @@ section h3 {
 
 @media (max-width: 800px) {
 
-	.main-header {
-		background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../img/header_small.jpg') no-repeat center;
-	}
-
-	.main-header .container {
-		align-items: center;
-		text-align: center;
-		padding: 0;
-	}
-
 	.main-header h1 {
 		font-size: 5.8rem;
 	}
@@ -353,6 +363,11 @@ section h3 {
 }
 
 @media (max-width: 500px) {
+
+	.main-header,
+	.video-overlay {
+		height: 100vh;
+	}
 
 	.main-header h1 {
 		font-size: 5rem;
