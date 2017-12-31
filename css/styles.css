@@ -284,6 +284,10 @@ section h3 {
 	color: #24292e;
 }
 
+.codepen:hover {
+	color: #000;
+}
+
 /* Footer Styles */
 
 .main-footer {
