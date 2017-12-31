@@ -87,14 +87,14 @@ img {
 
 /* Section Styles */
 
-section h3 {
+section h2 {
 	font-size: 30px;
 	text-align: center;
 	margin-top: 50px;
 	transition: letter-spacing 1s;
 }
 
-section h4 {
+section h3 {
 	font-size: 18px;
 	margin: 0 0 25px;
 }
@@ -189,7 +189,7 @@ section h4 {
 	text-align: center;
 }
 
-.contact-section h3 {
+.contact-section h2 {
 	flex-basis: 100%;
 }
 
