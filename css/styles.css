@@ -68,13 +68,13 @@ img {
     background-color: rgba(0,0,0,0.45);    
 }
 
-.main-header h1 {
+.video-overlay h1 {
 	font-size: 7.2rem;
 	margin: 0;
 	text-shadow: .042em .042em .014em rgba(0, 0, 0, 0.5);
 }
 
-.main-header h2 {
+.video-overlay h2 {
 	font-size: 3.2rem;
 	font-weight: 400;
 	margin: .75em 0 0;
