@@ -68,14 +68,6 @@ img {
     background-color: rgba(0,0,0,0.45);    
 }
 
-.main-header .container {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 60em;
-}
-
 .main-header h1 {
 	font-size: 7.2rem;
 	margin: 0;
