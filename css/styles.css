@@ -256,7 +256,7 @@ section h3 {
 	color: #040404;
 	margin-left: -4px;
 	padding: 0 12px;
-	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82);
+	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82), text-shadow .5s;
 }
 
 .social-container a:hover {
