@@ -37,14 +37,14 @@ img {
 
 /* Header Styles */
 
-header {
+.main-header {
 	background: url('../img/header_large.jpg') no-repeat 55%;
 	background-size: cover;
 	box-shadow: 0 0 10px #000;
 	color: #fff;
 }
 
-header .container {
+.main-header .container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -52,7 +52,21 @@ header .container {
 	height: 600px;
 }
 
-header .skip {
+.main-header h1 {
+	font-size: 72px;
+	margin: 0;
+	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main-header h2 {
+	font-size: 32px;
+	font-weight: 400;
+	margin: 24px 0 0;
+	text-indent: 6px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.skip-link {
     position: absolute !important;
 	top: 20px;
 	left: 0;
@@ -64,25 +78,11 @@ header .skip {
 	z-index: 5;
 }
 
-header .skip:focus {
+.skip-link:focus {
 	position: static;
     width: auto;
 	height: auto;
 	clip: auto;
-}
-
-header h1 {
-	font-size: 72px;
-	margin: 0;
-	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
-}
-
-header h2 {
-	font-size: 32px;
-	font-weight: 400;
-	margin: 24px 0 0;
-	text-indent: 6px;
-	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Section Styles */
@@ -286,7 +286,7 @@ section h4 {
 
 /* Footer Styles */
 
-footer {
+.main-footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -295,18 +295,18 @@ footer {
 	height: 100px;
 }
 
-footer p {
+.main-footer p {
 	font-size: 22px;
 	margin: 0;
 }
 
-footer a {
+.main-footer a {
 	color: #fff;
 	text-shadow: 2px 2px rgba(0,0,0,.5);
 	transition: color .5s, letter-spacing .5s;
 }
 
-footer a:hover {
+.main-footer a:hover {
 	color: #ccc;
 	letter-spacing: 1.1px;
 }
@@ -326,21 +326,21 @@ footer a:hover {
 
 @media (max-width: 800px) {
 
-	header {
+	.main-header {
 		background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../img/header_small.jpg') no-repeat center;
 	}
 
-	header .container {
+	.main-header .container {
 		align-items: center;
 		text-align: center;
 		padding: 0;
 	}
 
-	header h1 {
+	.main-header h1 {
 		font-size: 58px;
 	}
 
-	header h2 {
+	.main-header h2 {
 		font-size: 28px;
 	}
 
@@ -355,11 +355,11 @@ footer a:hover {
 
 @media (max-width: 500px) {
 
-	header h1 {
+	.main-header h1 {
 		font-size: 50px;
 	}
 
-	header h2 {
+	.main-header h2 {
 		font-size: 25px;
 	}
 
