@@ -55,6 +55,7 @@ img {
 }
 
 .video-overlay {
+	box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +67,7 @@ img {
     width: 100%;
     color: #fff;
     background-color: rgba(0,0,0,0.45);    
+	border-top: .55em solid #d66a00;
 }
 
 .video-overlay h1 {
