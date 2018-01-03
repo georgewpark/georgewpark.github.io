@@ -66,7 +66,7 @@ img {
     height: 60em;
     width: 100%;
     color: #fff;
-    background-color: rgba(0,0,0,0.45);    
+    background-color: rgba(0,0,0,.5);    
 	border-top: .55em solid #d66a00;
 }
 
