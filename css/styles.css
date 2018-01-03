@@ -111,14 +111,14 @@ img {
 
 /* Section Styles */
 
-section h2 {
+.section-heading {
 	font-size: 3rem;
 	text-align: center;
 	margin-top: 1.7em;
 	transition: letter-spacing 1s;
 }
 
-section h3 {
+.section-subheading {
 	font-size: 1.8rem;
 	margin: 0 0 1.4em;
 }
