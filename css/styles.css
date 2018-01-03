@@ -341,7 +341,7 @@ img {
 
 /* Media Queries */
 
-@media (max-width: 800px) {
+@media (max-width: 50em) {
 
 	.main-header h1 {
 		font-size: 5.8rem;
@@ -360,7 +360,7 @@ img {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 30em) {
 
 	.main-header,
 	.video-overlay {
