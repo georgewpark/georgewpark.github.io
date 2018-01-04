@@ -35,7 +35,7 @@ img {
 }
 
 ::selection {
-	background-color: #2b3223;
+	background-color: #4c3a68;
 	color: #fff;
 }
 
@@ -71,7 +71,7 @@ img {
     width: 100%;
     color: #fff;
     background-color: rgba(0,0,0,.5);    
-	border-top: .55em solid #d66a00;
+	border-top: .55em solid #4c3a68;
 }
 
 .video-overlay h1 {
