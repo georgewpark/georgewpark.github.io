@@ -389,7 +389,15 @@ img {
 		grid-template-columns: 1fr;
 	}
 
-	.email-container a, .social-container li {
+	.email-container a {
 		font-size: 2.2rem;
 	}
+
+	.social-container li {
+		font-size: 2.3rem;
+	}
+
+	.main-footer p {
+	font-size: 1.4em;
+}
 }
