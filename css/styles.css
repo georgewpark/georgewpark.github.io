@@ -27,7 +27,9 @@ p {
 
 a {
 	display: inline-block;
+	-webkit-text-decoration-color: #111;
 	text-decoration-color: #111;
+	-webkit-text-decoration-skip: ink;
 	text-decoration-skip: ink;
 	color: #000;
 }
