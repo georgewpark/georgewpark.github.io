@@ -8,7 +8,7 @@
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 	background-color: #f6f6f6;
-	color: #181818;
+	color: #111;
 	margin: 0;
 	padding: 0;
 }
@@ -27,7 +27,9 @@ p {
 
 a {
 	display: inline-block;
-	text-decoration: none;
+	text-decoration-color: #111;
+	text-decoration-skip: ink;
+	color: #000;
 }
 
 img {
@@ -41,7 +43,7 @@ img {
 
 :focus {
 	outline: none;
-	box-shadow: 0 0 0 .15em #4c3a68;
+	box-shadow: 0 0 0 .2rem #4c3a68;
 }
 
 /* Header Styles */
@@ -140,6 +142,7 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	perspective: 80em;
+	padding-bottom: 5em;
 }
 
 .about-section img {
@@ -154,7 +157,7 @@ img {
 }
 
 .about-section p {
-	margin: 1.5em auto 2.5em;
+	margin: 1.5em auto 0;
 	max-width: 42em;
 	text-align: left;
 }
@@ -249,13 +252,7 @@ img {
 }
 
 .email-container a {
-	color: #040404;
 	font-size: 2.5rem;
-	transition: letter-spacing .5s;
-}
-
-.email-container a:hover {
-	letter-spacing: .05em;
 }
 
 /* Social Section */
@@ -282,7 +279,6 @@ img {
 }
 
 .social-container a {
-	color: #040404;
 	margin-left: -.133em;
 	padding: 0 .4em;
 	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82), text-shadow .5s;
@@ -342,12 +338,12 @@ img {
 .main-footer a {
 	color: #fff;
 	text-shadow: .091em .091em rgba(0,0,0,.5);
-	transition: color .5s, letter-spacing .5s;
+	text-decoration: none;
+	transition: color .5s;
 }
 
 .main-footer a:hover {
-	color: #ccc;
-	letter-spacing: .05em;
+	color: #ddd;
 }
 
 /* Media Queries */
