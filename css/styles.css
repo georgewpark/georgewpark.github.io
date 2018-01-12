@@ -130,10 +130,6 @@ img {
 	margin: 0 0 1.4em;
 }
 
-.about-section .container, .portfolio-section .container{
-	border-bottom: 0.1em solid #ccc;
-}
-
 /* About Section */
 
 .about-section .container {
@@ -166,6 +162,7 @@ img {
 
 .portfolio-section {
 	text-align: center;
+	background: #eee;
 }
 
 .portfolio {
@@ -353,6 +350,15 @@ img {
 /* Media Queries */
 
 @media (max-width: 50em) {
+
+	.main-header {
+		background: url(../img/poster.jpg) no-repeat center;
+		background-size: fixed;
+	}
+
+	.bg-video {
+		display: none;
+	}
 
 	.main-header h1 {
 		font-size: 5.8rem;
