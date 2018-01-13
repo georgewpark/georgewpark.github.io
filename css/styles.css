@@ -383,7 +383,7 @@ img {
 
 /* Media Queries */
 
-@media (max-width: 50em) {
+@media (max-width: 58em) {
 
 	.main-header {
 		background: url(../img/poster.jpg) no-repeat center;
@@ -411,7 +411,7 @@ img {
 	}
 }
 
-@media (max-width: 30em) {
+@media (max-width: 32em) {
 
 	.main-header,
 	.video-overlay {
