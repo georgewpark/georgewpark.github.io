@@ -432,11 +432,6 @@ img {
 
 @media (max-width: 33em) {
 
-	.main-header,
-	.video-overlay {
-		height: 100vh;
-	}
-
 	.gallery {
 		grid-template-columns: 1fr;
 	}
