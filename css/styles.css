@@ -67,6 +67,7 @@ img {
 }
 
 .video-overlay {
+	font-family: Montserrat, Arial, sans-serif;
 	box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -78,19 +79,21 @@ img {
     height: 100vh;
     width: 100%;
     color: #fff;
-    background-color: rgba(0,0,0,0.6);    
+    background-color: rgba(0,0,0,0.7);    
 	border-top: .55em solid #4c3a68;
+	letter-spacing: 0.1em;
 }
 
 .video-overlay h1 {
 	font-size: calc(4em + 2.5vw);
+	font-weight: 700;
 	margin: 0;
 	text-shadow: .042em .042em .014em rgba(0, 0, 0, 0.5);
 }
 
 .video-overlay h2 {
 	font-size: calc(2em + 1.5vw);
-	font-weight: 400;
+	font-weight: 600;
 	margin: .5em 0 0;
 	text-indent: .187em;
 	text-shadow: .0625em .0625em .0312em rgba(0, 0, 0, 0.5);
