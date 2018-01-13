@@ -50,7 +50,7 @@ img {
 
 .main-header {
 	height: 100vh;
-	box-shadow: 0 0 1em #000;
+	box-shadow: 0 0 1.5em #000;
 	color: #fff;
 	overflow: hidden;
 	background-color: #181818;
