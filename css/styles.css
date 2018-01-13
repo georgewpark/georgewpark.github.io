@@ -32,6 +32,12 @@ a {
 	color: #000;
 }
 
+.external-icon:before {
+	font-size: .55em;
+	vertical-align: top;
+	padding-left: 0.25em;
+}
+
 img {
 	vertical-align: middle;
 }
@@ -261,6 +267,7 @@ img {
 
 .portfolio-item-title {
 	font-size: 1.6em;
+	line-height: 1.4;
 	margin: 0;
 }
 
