@@ -405,7 +405,8 @@ img {
 
 .reload-link {
 	display: block;
-	font-size: 2.5em;
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 2.6em;
 	text-shadow: .091em .091em rgba(0,0,0,.5);
 	text-decoration: none;
 }
