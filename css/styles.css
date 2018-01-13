@@ -249,13 +249,18 @@ img {
 
 .portfolio-item-thumbnail iframe {	
 	position: absolute;
-	top: 0;
+	top: -18%;
 	left: 0;
 	width: 201%;
-	height: 201%;
+	height: 237%;
 	transform: scale(0.5);
 	transform-origin: top left;
 	pointer-events: none;
+	z-index: -1;
+}
+
+.portfolio-item-thumbnail .hide-scroll {
+	width: 205%;
 }
 
 .portfolio-item-content {	
