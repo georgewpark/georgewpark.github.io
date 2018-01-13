@@ -200,7 +200,6 @@ img {
 }
 
 .portfolio-item {
-	background-color: #fff;
 	border-radius: .5em;
 	margin: 0 1vw;
 	border: .1em solid #ccc;
@@ -235,7 +234,7 @@ img {
 	align-items: center;
 	padding: 1.2em;
 	height: 6em;
-	background: #f1f1f1;
+	background: #eee;
 }
 
 .portfolio-item-title {
