@@ -229,10 +229,10 @@ img {
 	grid-gap: calc(1.5em + 2vw) 1.5em;
 }
 
-.portfolio-item {
-	border-radius: .5em;
+.portfolio-item {	
 	margin: 0 1vw;
 	border: .1em solid #ccc;
+	border-radius: .5em;
 }
 
 .portfolio-item a {
@@ -245,6 +245,8 @@ img {
 	height: 20em;
 	overflow: hidden;
 	border-bottom: .1em solid #ccc;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
 }
 
 .portfolio-item-thumbnail iframe {	
@@ -287,13 +289,16 @@ img {
 	opacity: 1;
 }
 
-.portfolio-item-content {	
+.portfolio-item-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1.2em;
 	height: 6em;
 	background: #eee;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	overflow: hidden;
 }
 
 .portfolio-item-title {
