@@ -363,14 +363,15 @@ a:focus {
 }
 
 .social-links {
+	display: flex;
+	justify-content: center;
 	list-style: none;
 }
 
 .social-links li {
-	font-size: 3rem;
-	display: inline-block;
-	border-right: 0.033em solid #ccc;
-	margin-bottom: 0.333em;
+	font-size: 3rem;	
+	border-right: 0.035em solid #ccc;
+	margin-bottom: 0.35em;
 }
 
 .social-links li:last-child {
@@ -378,11 +379,10 @@ a:focus {
 }
 
 .social-links a {
-	margin-left: -.133em;
 	padding: 0 0.4em;
-	transition: color 300ms, 
+	transition: color 300ms ease, 
 				transform 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82), 
-				text-shadow 500ms;
+				text-shadow 500ms ease-out;
 }
 
 .social-links a:hover {
