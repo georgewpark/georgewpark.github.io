@@ -194,7 +194,7 @@ a {
 
 /* Portfolio Section */
 
-.portfolio-section .container {
+.portfolio-section .section-container {
 	text-align: center;
 	border-top: 0.1em solid #ccc;
 	border-bottom: 0.1em solid #ccc;	
@@ -302,7 +302,7 @@ a {
 
 /* Contact Section */
 
-.contact-section .container {
+.contact-section .section-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -455,7 +455,7 @@ a {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.contact-section .container {
+	.contact-section .section-container {
 		flex-direction: column;
 	}
 }
