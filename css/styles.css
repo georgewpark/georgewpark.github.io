@@ -167,8 +167,7 @@ img {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
-	align-items: center;
-	perspective: 80em;
+	align-items: center;	
 	padding-bottom: 5em;
 }
 
@@ -177,6 +176,10 @@ img {
 	border-radius: 50%;
 	flex-basis: 25em;
 	transition: transform .5s;
+}
+
+.headshot-container {
+	perspective: 80em;
 }
 
 .headshot-container:hover img {
