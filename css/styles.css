@@ -171,19 +171,19 @@ img {
 	padding-bottom: 5em;
 }
 
-.about-section img {
-	display: inline-block;
-	border-radius: 50%;
-	flex-basis: 25em;
-	transition: transform .5s;
-}
-
 .headshot-container {
 	perspective: 80em;
 }
 
 .headshot-container:hover img {
 	transform: rotateY(360deg);
+}
+
+.headshot {
+	display: inline-block;
+	border-radius: 50%;
+	flex-basis: 25em;
+	transition: transform .5s;
 }
 
 .about-section p {
