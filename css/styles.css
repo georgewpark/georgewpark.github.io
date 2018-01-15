@@ -62,13 +62,13 @@ img {
 	background-color: #181818;
 }
 
-.bg-video {
+.video-bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.bg-video::-webkit-media-controls {
+.video-bg::-webkit-media-controls {
   display: none !important;
 }
 
@@ -214,7 +214,8 @@ img {
 	padding: .555em;
 }
 
-.portfolio-filters a.current, .portfolio-filters a:hover {
+.portfolio-filters a.current, 
+.portfolio-filters a:hover {
 	/*border-bottom: 2px solid #333;*/
 	background: #999;
 }
@@ -452,7 +453,7 @@ img {
 
 	.main-header {
 		background: url(../img/poster.jpg) no-repeat center;
-		background-size: fixed;
+		background-size: cover;
 	}
 
 	.bg-video {
