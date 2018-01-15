@@ -40,12 +40,6 @@ body {
 	color: #111;
 }
 
-.container {
-	max-width: 120em;
-	padding: 5em 1.5em;
-	margin: 0 auto;
-}
-
 p {
 	font-size: 2rem;
 	line-height: 1.8;
@@ -157,6 +151,12 @@ a {
 }
 
 /* Section Styles */
+
+.section-container {
+	max-width: 120em;
+	padding: 5em 1.5em;
+	margin: 0 auto;
+}
 
 .section-heading {
 	font-size: 3rem;
