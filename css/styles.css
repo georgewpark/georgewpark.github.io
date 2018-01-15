@@ -360,30 +360,30 @@ img {
 	flex-basis: 50%;
 }
 
-.social-container ul {
+.social-links {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.social-container li {
+.social-links li {
 	font-size: 3rem;
 	display: inline-block;
 	border-right: .033em solid #ccc;
 	margin-bottom: .333em;
 }
 
-.social-container li:last-child {
+.social-links li:last-child {
 	border-right: none;
 }
 
-.social-container a {
+.social-links a {
 	margin-left: -.133em;
 	padding: 0 .4em;
 	transition: color .3s, transform .5s cubic-bezier(0.13, 0.43, 0.54, 1.82), text-shadow .5s;
 }
 
-.social-container a:hover {
+.ssocial-links a:hover {
 	text-shadow: .033em .033em .033em rgba(0, 0, 0, 0.5);
 	transform: scale(1.1);
 }
