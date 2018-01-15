@@ -177,6 +177,10 @@ a:focus {
 	text-align: center;
 }
 
+.section-sub-heading::after {
+	content: ':';
+}
+
 /* About Section */
 
 .headshot-container {
