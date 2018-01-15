@@ -224,7 +224,7 @@ img {
 	margin-bottom: 5em;
 }
 
-.gallery {
+.portfolio-gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: calc(1.5em + 2vw) 1.5em;
@@ -456,10 +456,11 @@ img {
 		background-size: cover;
 	}
 
-	.bg-video {
+	.video-bg {
 		display: none;
 	}
-	.gallery {
+
+	.portfolio-gallery {
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -470,7 +471,7 @@ img {
 
 @media (max-width: 33em) {
 
-	.gallery {
+	.portfolio-gallery {
 		grid-template-columns: 1fr;
 	}
 
