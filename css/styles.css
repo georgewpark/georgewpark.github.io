@@ -15,7 +15,7 @@ body {
 
 .container {
 	max-width: 117em;
-	padding: 0 1.5em;
+	padding: 5em 1.5em;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -152,7 +152,7 @@ img {
 .section-heading {
 	font-size: 3rem;
 	text-align: center;
-	margin-top: 1.7em;
+	margin-top: 0;
 	transition: letter-spacing 1s;
 }
 
@@ -426,7 +426,6 @@ img {
 	justify-content: center;
 	align-items: center;
 	background-color: #202020;
-	margin-top: 5em;
 	height: 14em;
 	border-top: .5em solid #4c3a68;
 }
