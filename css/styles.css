@@ -36,8 +36,7 @@ ul {
 }
 
 body {
-	font-family: 'Roboto', Arial, sans-serif;
-	background-color: #fcfcfc;
+	font-family: 'Roboto', Arial, sans-serif;	
 	color: #111;
 }
 
@@ -160,6 +159,16 @@ a:focus {
 
 /* Section Styles */
 
+.section-light {
+	background-color: #fcfcfc;
+}
+
+.section-dark {
+	background-color: #eee;
+	border-top: 0.1em solid #ccc;
+	border-bottom: 0.1em solid #ccc;	
+}
+
 .section-container {
 	max-width: 120em;
 	padding: 5em 1.5em;
@@ -207,9 +216,7 @@ a:focus {
 /* Portfolio Section */
 
 .portfolio-section .section-container {
-	text-align: center;
-	border-top: 0.1em solid #ccc;
-	border-bottom: 0.1em solid #ccc;	
+	text-align: center;	
 }
 
 .portfolio-filters {
@@ -239,7 +246,7 @@ a:focus {
 
 .portfolio-item {	
 	margin: 0 1vw;
-	border: 0.1em solid #ccc;
+	border: 0.1em solid #bbb;
 	border-radius: 0.5em;
 }
 
@@ -252,7 +259,7 @@ a:focus {
 	position: relative;
 	height: 20em;
 	overflow: hidden;
-	border-bottom: 0.1em solid #ccc;
+	border-bottom: 0.1em solid #bbb;
 	border-top-left-radius: 0.5em;
 	border-top-right-radius: 0.5em;
 }
@@ -266,7 +273,6 @@ a:focus {
 	transform: scale(0.5);
 	transform-origin: top left;
 	pointer-events: none;
-	z-index: -1;
 }
 
 .portfolio-item-thumbnail .hide-scroll {
@@ -301,7 +307,7 @@ a:focus {
 	align-items: center;
 	padding: 1.2em;
 	height: 8.4em;
-	background: #eee;
+	background-color: #fdfdfd;
 	border-bottom-left-radius: 0.5em;
 	border-bottom-right-radius: 0.5em;
 	overflow: hidden;
