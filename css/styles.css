@@ -38,6 +38,7 @@ ul {
 body {
 	font-family: 'Roboto', Arial, sans-serif;	
 	color: #111;
+	line-height: normal;
 }
 
 p {
