@@ -463,7 +463,7 @@ a:focus {
 @media (max-width: 58em) {
 
 	.main-header {
-		background: url(../img/header_bg.jpg) no-repeat center fixed;
+		background: url(../images/header_bg.jpg) no-repeat center fixed;
 		background-size: cover;
 	}
 
