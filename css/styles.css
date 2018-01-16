@@ -67,11 +67,8 @@ a:focus {
 /* Header Styles */
 
 .main-header {
-	height: 100vh;
-	box-shadow: 0 0 1.5em #000;
+	height: 100vh;	
 	color: #fff;
-	overflow: hidden;
-	
 }
 
 .video-bg {
