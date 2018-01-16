@@ -162,9 +162,6 @@ a:focus {
 
 .learn-more-link .fa {
 	font-size: 1.2em;
-}
-
-.learn-more-link:hover .fa {
 	animation: bounce 500ms infinite alternate;
 }
 
