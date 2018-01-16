@@ -462,12 +462,16 @@ a:focus {
 @media (max-width: 58em) {
 
 	.main-header {
-		background: url(../img/poster.jpg) no-repeat center fixed;
+		background: url(../img/header_bg.jpg) no-repeat center fixed;
 		background-size: cover;
 	}
 
 	.video-bg {
 		display: none;
+	}
+
+	.video-overlay {
+    	background-color: rgba(0,0,0,0.8);   
 	}
 
 	.portfolio-gallery {
