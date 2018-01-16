@@ -164,6 +164,16 @@ a:focus {
 	font-size: 1.2em;
 }
 
+.learn-more-link:hover .fa {
+	animation: bounce 500ms infinite alternate;
+}
+
+@keyframes bounce {
+	100% {
+		transform: translateY(30%);
+	}
+}
+
 /* Section Styles */
 
 .section-light {
