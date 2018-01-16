@@ -168,12 +168,6 @@ a:focus {
 	animation: bounce 500ms infinite alternate;
 }
 
-@keyframes bounce {
-	100% {
-		transform: translateY(30%);
-	}
-}
-
 /* Section Styles */
 
 .section-light {
@@ -488,6 +482,12 @@ a:focus {
     transform: translateY(0%);
   }
 
+}
+
+@keyframes bounce {
+	100% {
+		transform: translateY(30%);
+	}
 }
 
 /* Media Queries */
