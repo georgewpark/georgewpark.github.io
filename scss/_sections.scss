@@ -15,8 +15,8 @@
 
 	&-dark {
 		background-color: #eee;
-		border-top: 0.1em solid #ccc;
-		border-bottom: 0.1em solid #ccc;	
+		border-top: 0.1em solid $borderColor;
+		border-bottom: 0.1em solid $borderColor;	
 	}
 	
 	&-heading {
