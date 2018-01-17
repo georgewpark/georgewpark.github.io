@@ -27,21 +27,20 @@ ul {
 
 :root {
 	font-size: 10px;
-	--purple: #4c3a68;
 }
 
 :focus {
 	outline: none;
-	box-shadow: 0 0 0 0.25rem var(--purple);
+	box-shadow: 0 0 0 0.25rem $themeColor;
 }
 
 ::-moz-selection {
-	background-color: var(--purple);
+	background-color: $themeColor;
 	color: #fff;
 }
 
 ::selection {
-	background-color: var(--purple);
+	background-color: $themeColor;
 	color: #fff;
 }
 
@@ -66,7 +65,7 @@ a {
 
 a:hover,
 a:focus {
-	color: var(--purple);
+	color: $themeColor;
 }
 
 .external-icon:before {
@@ -108,7 +107,7 @@ a:focus {
     width: 100%;
     color: #fff;
     background-color: rgba(0,0,0,0.7);    
-	border-top: 0.6em solid var(--purple);
+	border-top: 0.6em solid $themeColor;
 	letter-spacing: 0.1em;
 }
 
@@ -453,7 +452,7 @@ a:focus {
 	align-items: center;
 	background-color: #181818;
 	height: 15em;
-	border-top: 0.5em solid var(--purple);
+	border-top: 0.5em solid $themeColor;
 }
 
 .main-footer a {

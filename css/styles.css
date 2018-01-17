@@ -19,21 +19,20 @@ ul {
 
 :root {
   font-size: 10px;
-  --purple: #4c3a68;
 }
 
 :focus {
   outline: none;
-  box-shadow: 0 0 0 0.25rem var(--purple);
+  box-shadow: 0 0 0 0.25rem #4c3a68;
 }
 
 ::-moz-selection {
-  background-color: var(--purple);
+  background-color: #4c3a68;
   color: #fff;
 }
 
 ::selection {
-  background-color: var(--purple);
+  background-color: #4c3a68;
   color: #fff;
 }
 
@@ -58,7 +57,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--purple);
+  color: #4c3a68;
 }
 
 .external-icon:before {
@@ -99,7 +98,7 @@ a:focus {
   width: 100%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  border-top: 0.6em solid var(--purple);
+  border-top: 0.6em solid #4c3a68;
   letter-spacing: 0.1em;
 }
 
@@ -434,7 +433,7 @@ a:focus {
   align-items: center;
   background-color: #181818;
   height: 15em;
-  border-top: 0.5em solid var(--purple);
+  border-top: 0.5em solid #4c3a68;
 }
 
 .main-footer a {
