@@ -30,6 +30,11 @@ ul {
 	box-shadow: 0 0 0 0.25rem $themeColor;
 }
 
+::-moz-selection {
+	background-color: $themeColor;
+	color: #fff;
+}
+
 ::selection {
 	background-color: $themeColor;
 	color: #fff;
@@ -49,6 +54,7 @@ p {
 a {
 	display: inline-block;	
 	color: #000;
+	-webkit-text-decoration-skip: ink;
 	text-decoration-skip: ink;
 	transition: color 300ms;
 
