@@ -56,7 +56,7 @@ a {
 	transition: color 300ms;
 
 	&:hover, &:focus {
-		color: $themeColor;
+		color: darken($themeColor, 8%);
 	}
 }
 
