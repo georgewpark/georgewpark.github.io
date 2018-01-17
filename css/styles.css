@@ -905,36 +905,4 @@ a:focus {
     transform: translateY(30%);
   }
 }
-
-/* Media Queries */
-@media (max-width: 58em) {
-  .main-header {
-    background: url(../images/header_bg.jpg) no-repeat center;
-    background-size: cover;
-  }
-  .video-bg {
-    display: none;
-  }
-  .portfolio-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-  .contact-section .section-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 33em) {
-  .portfolio-gallery {
-    grid-template-columns: 1fr;
-  }
-  .email-link {
-    font-size: 2.2rem;
-  }
-  .social-container li {
-    font-size: 2.4rem;
-  }
-  .hosting-info {
-    font-size: 1.4rem;
-  }
-}
 /*# sourceMappingURL=styles.css.map */
