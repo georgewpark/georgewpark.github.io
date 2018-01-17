@@ -1,6 +1,8 @@
 
 /* Contact Section */
 
+@include colorSocialLinks;
+
 .contact-section {
 
 	.section {
@@ -76,7 +78,7 @@
 			}
 		}
 
-		a {
+		a {			
 			padding: 0 0.4em;
 			transition: color 300ms ease, 
 						transform 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82), 
@@ -87,47 +89,5 @@
 				transform: scale(1.1);
 			}
 		}
-	}
-}
-
-.facebook {
-	&:hover,
-	&:focus {
-		color: #3b5998;
-	}
-}
-
-.twitter {
-	&:hover,
-	&:focus {
-		color: #55acee;
-	}
-}
-
-.instagram {
-	&:hover,
-	&:focus {
-		color: #e95950;
-	}
-}
-
-.linkedin {
-	&:hover,
-	&:focus {
-		color: #007bb5;
-	}
-}
-
-.github {
-	&:hover,
-	&:focus {
-		color: #24292e;
-	}
-}
-
-.codepen {
-	&:hover,
-	&:focus {
-		color: #000;
 	}
 }

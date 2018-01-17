@@ -597,6 +597,12 @@ a:hover, a:focus {
 }
 
 /* Section Styles */
+.section-container {
+  max-width: 120em;
+  padding: 5em 1.5em;
+  margin: 0 auto;
+}
+
 .section-light {
   background-color: #fcfcfc;
 }
@@ -605,12 +611,6 @@ a:hover, a:focus {
   background-color: #eee;
   border-top: 0.1em solid #ccc;
   border-bottom: 0.1em solid #ccc;
-}
-
-.section-container {
-  max-width: 120em;
-  padding: 5em 1.5em;
-  margin: 0 auto;
 }
 
 .section-heading {
@@ -754,6 +754,30 @@ a:hover, a:focus {
 }
 
 /* Contact Section */
+.facebook:hover, .facebook:focus {
+  color: #3b5998;
+}
+
+.twitter:hover, .twitter:focus {
+  color: #55acee;
+}
+
+.instagram:hover, .instagram:focus {
+  color: #e95950;
+}
+
+.linkedin:hover, .linkedin:focus {
+  color: #007bb5;
+}
+
+.github:hover, .github:focus {
+  color: #24292e;
+}
+
+.codepen:hover, .codepen:focus {
+  color: #000;
+}
+
 .contact-section .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -823,30 +847,6 @@ a:hover, a:focus {
 .social-links a:hover {
   text-shadow: 0.032em 0.032em 0.032em rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
-}
-
-.facebook:hover, .facebook:focus {
-  color: #3b5998;
-}
-
-.twitter:hover, .twitter:focus {
-  color: #55acee;
-}
-
-.instagram:hover, .instagram:focus {
-  color: #e95950;
-}
-
-.linkedin:hover, .linkedin:focus {
-  color: #007bb5;
-}
-
-.github:hover, .github:focus {
-  color: #24292e;
-}
-
-.codepen:hover, .codepen:focus {
-  color: #000;
 }
 
 /* Footer Styles */
