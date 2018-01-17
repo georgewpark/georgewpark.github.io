@@ -1,12 +1,17 @@
 
+// Modules
 @import "variables";
 @import "mixins";
+
+//Partials
 @import "normalize";
 @import "base";
+@import "animations";
+
+// Sections
 @import "header";
 @import "sections";
 @import "about-section";
 @import "portfolio-section";
 @import "contact-section";
 @import "footer";
-@import "animations";
