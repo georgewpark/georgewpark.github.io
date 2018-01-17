@@ -1,10 +1,10 @@
 
 @mixin colorSocialLinks {
-    @each $website, $color in $socialColors {
-        .#{$website} {
+    @each $siteName, $siteColor in $socialColors {
+        .#{$siteName} {
             &:hover,
             &:focus {
-                color: $color;
+                color: $siteColor;
             }            
         }
     }
