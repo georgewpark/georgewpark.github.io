@@ -1,0 +1,11 @@
+
+@mixin colorSocialLinks {
+    @each $website, $color in $socialColors {
+        .#{$website} {
+            &:hover,
+            &:focus {
+                color: $color;
+            }            
+        }
+    }
+}
