@@ -1,0 +1,68 @@
+
+/* Base Styles */
+
+body,
+h1, 
+h2, 
+h3, 
+h4,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 10px;
+}
+
+:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.25rem $themeColor;
+}
+
+::-moz-selection {
+	background-color: $themeColor;
+	color: #fff;
+}
+
+::selection {
+	background-color: $themeColor;
+	color: #fff;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;	
+	color: #111;
+	line-height: normal;
+}
+
+p {
+	font-size: 2rem;
+	line-height: 1.8;
+}
+
+a {
+	display: inline-block;	
+	color: #000;
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip: ink;
+	transition: color 300ms;
+}
+
+a:hover,
+a:focus {
+	color: $themeColor;
+}
+
+.external-icon:before {
+	font-size: 0.55em;
+	vertical-align: top;
+	padding-left: 0.25em;
+}
