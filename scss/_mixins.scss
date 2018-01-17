@@ -1,4 +1,5 @@
 
+// Color Social Links
 @mixin colorSocialLinks {
     @each $siteName, $siteColor in $socialColors {
         .#{$siteName} {
