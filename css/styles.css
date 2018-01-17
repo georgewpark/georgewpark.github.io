@@ -505,10 +505,6 @@ a:focus {
 		display: none;
 	}
 
-	.video-overlay {
-    	background-color: rgba(0,0,0,0.8);   
-	}
-
 	.portfolio-gallery {
 		grid-template-columns: 1fr 1fr;
 	}
