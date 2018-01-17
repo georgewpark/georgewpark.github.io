@@ -1,34 +1,37 @@
 
 /* Section Styles */
 
-.section-light {
-	background-color: #fcfcfc;
-}
+.section {
 
-.section-dark {
-	background-color: #eee;
-	border-top: 0.1em solid #ccc;
-	border-bottom: 0.1em solid #ccc;	
-}
+	&-container {
+		max-width: 120em;
+		padding: 5em 1.5em;
+		margin: 0 auto;
+	}
 
-.section-container {
-	max-width: 120em;
-	padding: 5em 1.5em;
-	margin: 0 auto;
-}
+	&-light {
+		background-color: #fcfcfc;
+	}	
 
-.section-heading {
-	font-size: 3rem;
-	margin-bottom: 0.72em;
-	text-align: center;
-}
+	&-dark {
+		background-color: #eee;
+		border-top: 0.1em solid #ccc;
+		border-bottom: 0.1em solid #ccc;	
+	}
+	
+	&-heading {
+		font-size: 3rem;
+		margin-bottom: 0.72em;
+		text-align: center;
+	}
 
-.section-sub-heading {
-	font-size: 1.8rem;
-	margin-bottom: 1.4em;
-	text-align: center;
-}
+	&-sub-heading {
+		font-size: 1.8rem;
+		margin-bottom: 1.4em;
+		text-align: center;
 
-.section-sub-heading::after {
-	content: ':';
+		&::after {
+			content: ':';
+		}
+	}
 }

@@ -488,12 +488,11 @@ a {
   transition: color 300ms;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #4c3a68;
 }
 
-.external-icon:before {
+.external-icon::before {
   font-size: 0.55em;
   vertical-align: top;
   padding-left: 0.25em;
@@ -588,8 +587,7 @@ a:focus {
   transition: color 300ms ease;
 }
 
-.learn-more-link:hover,
-.learn-more-link:focus {
+.learn-more-link:hover, .learn-more-link:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -632,10 +630,9 @@ a:focus {
 }
 
 /* About Section */
-.headshot-container {
-  width: 25em;
-  margin: 0 auto;
-  perspective: 80em;
+.about-section p {
+  margin: 1.5em auto 0;
+  max-width: 42em;
 }
 
 .headshot {
@@ -643,13 +640,14 @@ a:focus {
   transition: transform 500ms ease-in-out;
 }
 
-.headshot-container:hover .headshot {
-  transform: rotateY(360deg);
+.headshot-container {
+  width: 25em;
+  margin: 0 auto;
+  perspective: 80em;
 }
 
-.about-section p {
-  margin: 1.5em auto 0;
-  max-width: 42em;
+.headshot-container:hover .headshot {
+  transform: rotateY(360deg);
 }
 
 /* Portfolio Section */
@@ -670,10 +668,9 @@ a:focus {
   padding: 0.555em;
 }
 
-.portfolio-filters a.current,
-.portfolio-filters a:hover {
+.portfolio-filters a.current, .portfolio-filters a:hover {
   /*border-bottom: 2px solid #333;*/
-  background: #999;
+  background-color: #999;
 }
 
 .portfolio-gallery {
@@ -691,6 +688,10 @@ a:focus {
 .portfolio-item a {
   display: block;
   text-decoration: none;
+}
+
+.portfolio-item a:hover .portfolio-item-thumbnail-overlay {
+  opacity: 1;
 }
 
 .portfolio-item-thumbnail {
@@ -735,10 +736,6 @@ a:focus {
   font-size: 1.5rem;
 }
 
-.portfolio-item a:hover .portfolio-item-thumbnail-overlay {
-  opacity: 1;
-}
-
 .portfolio-item-content {
   display: flex;
   justify-content: center;
@@ -769,10 +766,6 @@ a:focus {
 }
 
 /* Map Section */
-.map-container {
-  flex-basis: 80%;
-}
-
 .map {
   display: flex;
   height: 24em;
@@ -785,6 +778,10 @@ a:focus {
   font-size: 2rem;
   font-weight: 700;
   margin: auto;
+}
+
+.map-container {
+  flex-basis: 80%;
 }
 
 /* Email Section */
@@ -828,33 +825,27 @@ a:focus {
   transform: scale(1.1);
 }
 
-.facebook:hover,
-.facebook:focus {
+.facebook:hover, .facebook:focus {
   color: #3b5998;
 }
 
-.twitter:hover,
-.twitter:focus {
+.twitter:hover, .twitter:focus {
   color: #55acee;
 }
 
-.instagram:hover,
-.instagram:focus {
+.instagram:hover, .instagram:focus {
   color: #e95950;
 }
 
-.linkedin:hover,
-.linkedin:focus {
+.linkedin:hover, .linkedin:focus {
   color: #007bb5;
 }
 
-.github:hover,
-.github:focus {
+.github:hover, .github:focus {
   color: #24292e;
 }
 
-.codepen:hover,
-.codepen:focus {
+.codepen:hover, .codepen:focus {
   color: #000;
 }
 

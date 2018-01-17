@@ -1,108 +1,133 @@
 
 /* Contact Section */
 
-.contact-section .section-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-}
+.contact-section {
 
-.contact-section .section-heading {
-	flex-basis: 100%;
+	.section {
+
+		&-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		&-heading {
+			flex-basis: 100%;
+		}
+	}
 }
 
 /* Map Section */
 
-.map-container {
-	flex-basis: 80%;
-}
-
 .map {
+
 	display: flex;
 	height: 24em;
 	border: 0.1em solid #ccc;
 	border-radius: 0.5em;
 	margin: 0 auto 5em;
-}
 
-.map span {
-	font-size: 2rem;
-	font-weight: 700;
-	margin: auto;
+	span {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: auto;
+	}
+
+	&-container {
+		flex-basis: 80%;
+	}
 }
 
 /* Email Section */
 
-.email-container {
-	flex-basis: 50%;
-	margin-bottom: 5em;
-}
+.email {	
 
-.email-link {
-	font-size: 2.5em;
+	&-container {
+		flex-basis: 50%;
+		margin-bottom: 5em;
+	}
+
+	&-link {
+		font-size: 2.5em;
+	}
 }
 
 /* Social Section */
 
-.social-container {
-	flex-basis: 50%;
+.social {
+
+	&-container {
+		flex-basis: 50%;
+	}
+
+	&-links {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+
+		li {
+			font-size: 3rem;	
+			border-right: 0.035em solid #ccc;
+			margin-bottom: 0.35em;
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+		a {
+			padding: 0 0.4em;
+			transition: color 300ms ease, 
+						transform 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82), 
+						text-shadow 500ms ease-out;
+			
+			&:hover {
+				text-shadow: 0.032em 0.032em 0.032em rgba(0, 0, 0, 0.5);
+				transform: scale(1.1);
+			}
+		}
+	}
 }
 
-.social-links {
-	display: flex;
-	justify-content: center;
-	list-style: none;
+.facebook {
+	&:hover,
+	&:focus {
+		color: #3b5998;
+	}
 }
 
-.social-links li {
-	font-size: 3rem;	
-	border-right: 0.035em solid #ccc;
-	margin-bottom: 0.35em;
+.twitter {
+	&:hover,
+	&:focus {
+		color: #55acee;
+	}
 }
 
-.social-links li:last-child {
-	border-right: none;
+.instagram {
+	&:hover,
+	&:focus {
+		color: #e95950;
+	}
 }
 
-.social-links a {
-	padding: 0 0.4em;
-	transition: color 300ms ease, 
-				transform 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82), 
-				text-shadow 500ms ease-out;
+.linkedin {
+	&:hover,
+	&:focus {
+		color: #007bb5;
+	}
 }
 
-.social-links a:hover {
-	text-shadow: 0.032em 0.032em 0.032em rgba(0, 0, 0, 0.5);
-	transform: scale(1.1);
+.github {
+	&:hover,
+	&:focus {
+		color: #24292e;
+	}
 }
 
-.facebook:hover,
-.facebook:focus {
-	color: #3b5998;
-}
-
-.twitter:hover,
-.twitter:focus {
-	color: #55acee;
-}
-
-.instagram:hover,
-.instagram:focus {
-	color: #e95950;
-}
-
-.linkedin:hover,
-.linkedin:focus {
-	color: #007bb5;
-}
-
-.github:hover,
-.github:focus {
-	color: #24292e;
-}
-
-.codepen:hover,
-.codepen:focus {
-	color: #000;
+.codepen {
+	&:hover,
+	&:focus {
+		color: #000;
+	}
 }

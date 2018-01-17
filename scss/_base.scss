@@ -54,15 +54,16 @@ a {
 	-webkit-text-decoration-skip: ink;
 	text-decoration-skip: ink;
 	transition: color 300ms;
+
+	&:hover, &:focus {
+		color: $themeColor;
+	}
 }
 
-a:hover,
-a:focus {
-	color: $themeColor;
-}
-
-.external-icon:before {
-	font-size: 0.55em;
-	vertical-align: top;
-	padding-left: 0.25em;
+.external-icon {
+	&::before {
+		font-size: 0.55em;
+		vertical-align: top;
+		padding-left: 0.25em;
+	}
 }
