@@ -754,6 +754,7 @@ a:hover, a:focus {
 
 .portfolio-item-thumbnail-overlay p {
   font-size: 1.5rem;
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-item-content {
