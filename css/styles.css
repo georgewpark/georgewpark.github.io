@@ -723,7 +723,7 @@ a:hover, a:focus {
   border-top-right-radius: 0.5em;
 }
 
-.portfolio-item-thumbnail iframe {
+.portfolio-item-thumbnail .live-view {
   position: absolute;
   top: -18%;
   left: 0;
