@@ -895,7 +895,7 @@ a:hover, a:focus {
   display: block;
   font-family: Montserrat, Arial, sans-serif;
   font-size: 2.6rem;
-  text-shadow: 0.08em 0.08em rgba(0, 0, 0, 0.5);
+  text-shadow: 0.06em 0.06em rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
