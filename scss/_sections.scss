@@ -10,11 +10,11 @@
 	}
 
 	&-light {
-		background-color: #fafafa;
+		background-color: $sectionLight;
 	}	
 
 	&-dark {
-		background-color: #ededed;
+		background-color: $sectionDark;
 		border-top: 0.1em solid $borderColor;
 		border-bottom: 0.1em solid $borderColor;	
 	}
