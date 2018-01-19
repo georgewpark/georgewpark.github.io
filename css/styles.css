@@ -550,7 +550,7 @@ a:hover, a:focus {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
-  border-top: 0.6em solid #4c3a68;
+  border-top: 0.8em solid #4c3a68;
   letter-spacing: 0.1em;
 }
 
