@@ -906,9 +906,9 @@ a:hover, a:focus {
 }
 
 /* Media Queries */
-@media (max-width: 58em) {
+@media screen and (max-width: 58em) {
   .main-header {
-    background: url(../images/header_bg.jpg) no-repeat center scroll;
+    background: url(../images/header_bg.jpg) no-repeat center;
     background-size: cover;
   }
   .video-bg {
@@ -922,7 +922,7 @@ a:hover, a:focus {
   }
 }
 
-@media (max-width: 33em) {
+@media screen and (max-width: 33em) {
   .portfolio-gallery {
     grid-template-columns: 1fr;
   }

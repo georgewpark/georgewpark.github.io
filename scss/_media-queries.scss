@@ -1,7 +1,7 @@
 
 /* Media Queries */
 
-@media (max-width: 58em) {
+@media screen and (max-width: 58em) {
 
 	.main-header {
 		background: url(../images/header_bg.jpg) no-repeat center;
@@ -21,7 +21,7 @@
 	}
 }
 
-@media (max-width: 33em) {
+@media screen and (max-width: 33em) {
 
 	.portfolio-gallery {
 		grid-template-columns: 1fr;
