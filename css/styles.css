@@ -617,20 +617,14 @@ a:hover, a:focus {
 }
 
 /* Section Styles */
+.section {
+  background-color: #fafafa;
+}
+
 .section-container {
   max-width: 120em;
   padding: 5em 1.5em;
   margin: 0 auto;
-}
-
-.section-light {
-  background-color: #fafafa;
-}
-
-.section-dark {
-  background-color: #ededed;
-  border-top: 0.1em solid #ccc;
-  border-bottom: 0.1em solid #ccc;
 }
 
 .section-heading {
@@ -673,6 +667,8 @@ a:hover, a:focus {
 /* Portfolio Section */
 .portfolio-section .section-container {
   text-align: center;
+  border-top: 0.1em solid #ccc;
+  border-bottom: 0.1em solid #ccc;
 }
 
 .portfolio-filters {
@@ -768,7 +764,7 @@ a:hover, a:focus {
   align-items: center;
   padding: 1.2em;
   height: 8.4em;
-  background-color: #fdfdfd;
+  background-color: #efefef;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   overflow: hidden;
