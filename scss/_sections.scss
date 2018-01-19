@@ -3,20 +3,12 @@
 
 .section {
 
+	background-color: $sectionColor;	
+
 	&-container {
 		max-width: 120em;
 		padding: 5em 1.5em;
 		margin: 0 auto;
-	}
-
-	&-light {
-		background-color: $sectionLight;
-	}	
-
-	&-dark {
-		background-color: $sectionDark;
-		border-top: 0.1em solid $borderColor;
-		border-bottom: 0.1em solid $borderColor;	
 	}
 	
 	&-heading {
