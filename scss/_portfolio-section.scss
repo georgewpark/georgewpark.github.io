@@ -5,6 +5,8 @@
 
 	&-section .section-container {
 		text-align: center;	
+		border-top: 0.1em solid $borderColor;
+		border-bottom: 0.1em solid $borderColor;
 	}
 
 	&-filters {
@@ -101,7 +103,7 @@
 			align-items: center;
 			padding: 1.2em;
 			height: 8.4em;
-			background-color: #fdfdfd;
+			background-color: #efefef;
 			border-bottom-left-radius: 0.5em;
 			border-bottom-right-radius: 0.5em;
 			overflow: hidden;
