@@ -904,7 +904,7 @@ a:hover, a:focus {
 /* Media Queries */
 @media screen and (max-width: 58em) {
   .main-header {
-    background: url(../images/header_bg.jpg) no-repeat center;
+    background: url(/../images/header_bg.jpg) no-repeat center;
     background-size: cover;
   }
   .video-bg {
