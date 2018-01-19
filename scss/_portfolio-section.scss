@@ -37,6 +37,11 @@
 		margin: 0 1vw;
 		border: 0.1em solid darken($borderColor, 6%);
 		border-radius: 0.5em;
+		transition: box-shadow 250ms;
+
+		&:hover {
+			box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+		}
 
 		a {
 			display: block;
