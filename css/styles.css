@@ -691,7 +691,7 @@ a:hover, a:focus {
 
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   grid-gap: calc(1.5em + 2vw) 1.5em;
 }
 
@@ -910,18 +910,12 @@ a:hover, a:focus {
   .video-bg {
     display: none;
   }
-  .portfolio-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
   .contact-section .section-container {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 33em) {
-  .portfolio-gallery {
-    grid-template-columns: 1fr;
-  }
   .email-link {
     font-size: 2.2rem;
   }
