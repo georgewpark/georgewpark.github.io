@@ -5,63 +5,27 @@
 
 .contact-section {
 
-	.section {
-
-		&-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			text-align: center;
-		}
-
-		&-heading {
-			flex-basis: 100%;
-		}
-	}
-}
-
-/* Map Sub-Section */
-
-.map {
-
-	display: flex;
-	height: 24em;
-	border: 0.1em solid $borderColor;
-	border-radius: 0.5em;
-	margin: 0 auto 5em;
-
-	span {
-		font-size: 2rem;
-		font-weight: 700;
-		margin: auto;
+	.section-container {
+		text-align: center;
 	}
 
-	&-container {
-		flex-basis: 80%;
+	.section-heading,
+	.section-sub-heading {
+		margin-bottom: 1em;	
 	}
+
 }
 
 /* Email Sub-Section */
 
-.email {	
-
-	&-container {
-		flex-basis: 50%;
-		margin-bottom: 5em;
-	}
-
-	&-link {
-		font-size: 2.5em;
-	}
+.email-link {
+	font-size: 2.5rem;
+	margin-bottom: 1.8em;	
 }
 
 /* Social Sub-Section */
 
 .social {
-
-	&-container {
-		flex-basis: 50%;
-	}
 
 	&-links {
 		display: flex;
