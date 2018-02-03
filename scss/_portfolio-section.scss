@@ -73,8 +73,12 @@
 				pointer-events: none;
 			}
 
-			.hide-scroll {
+			.hide-v-scroll {
 				width: 205%;
+			}
+
+			.hide-h-scroll {
+				height: 242%;
 			}
 
 			&-overlay {

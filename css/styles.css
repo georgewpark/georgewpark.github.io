@@ -749,8 +749,12 @@ a:hover, a:focus {
   pointer-events: none;
 }
 
-.portfolio-item-thumbnail .hide-scroll {
+.portfolio-item-thumbnail .hide-v-scroll {
   width: 205%;
+}
+
+.portfolio-item-thumbnail .hide-h-scroll {
+  height: 242%;
 }
 
 .portfolio-item-thumbnail-overlay {
