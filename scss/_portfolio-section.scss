@@ -31,12 +31,11 @@
 	&-gallery {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-		grid-gap: calc(1.5em + 2vw) 1.5em;
+		grid-gap: 2em;
 	}
 
 	&-item {	
 		
-		margin: 0 1vw;
 		border: 0.1em solid darken($borderColor, 6%);
 		border-radius: 0.5em;
 		transition: box-shadow 250ms;
