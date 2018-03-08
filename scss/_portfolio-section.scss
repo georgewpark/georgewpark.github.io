@@ -29,13 +29,14 @@
 	}
 
 	&-gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-		grid-gap: 2em;
+		display: flex;
+		flex-wrap: wrap;
+		margin: -1rem -1rem;
 	}
 
 	&-item {	
-		
+		flex: 1 0 30em;		
+		margin: 1rem;
 		border: 0.1em solid darken($borderColor, 6%);
 		border-radius: 0.5em;
 		transition: box-shadow 250ms;
@@ -116,5 +117,18 @@
 			font-size: 1.6rem;
 			line-height: 1.4;
 		}
+	}
+}
+
+@supports (display: grid) {
+	.portfolio-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+		grid-gap: 2em;
+	}
+
+	.portfolio-gallery,
+	.portfolio-item {
+		margin: 0;
 	}
 }
