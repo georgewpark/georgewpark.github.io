@@ -879,7 +879,7 @@ a:hover, a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#181818, #1c1c1c, #181818);
+  background-color: #1a1a1a;
   height: 15em;
   border-top: 0.5em solid #4c3a68;
 }
