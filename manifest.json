@@ -1,4 +1,5 @@
 {
+    "short_name": "George Park",
     "name": "George Park",
     "icons": [
         {
@@ -12,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#4c3a68",
-    "background_color": "#4c3a68",
+    "theme_color": "#2c3477",
+    "background_color": "#2c3477",
     "display": "standalone"
 }

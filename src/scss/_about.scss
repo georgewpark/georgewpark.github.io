@@ -1,0 +1,18 @@
+.about-section {
+    p {
+        font-size: 2em;
+        line-height: 2.0;
+        margin-bottom: 1em;
+        max-width: 52em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .fa-external-link-alt {
+        font-size: 0.4em;
+        padding-top: 1em;
+        padding-left: 0.2em;
+    }
+}

@@ -1,0 +1,93 @@
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontStack;
+    font-weight: 400;
+    font-display: swap;
+    color: $black;
+}
+
+main {
+    background-color: #fcfcfc;
+}
+
+a {
+    color: $black;
+    // text-decoration-color:  $themeColor;
+    -webkit-text-decoration-skip: auto;
+	        text-decoration-skip: auto;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 120em;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.section__heading {
+    font-size: 3em;
+    font-weight: 600;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+%btn {
+    display: inline-block;
+    font: inherit;    
+    color: inherit;
+    background: none;
+    border-radius: 0.5em;
+    border: 0.12em solid #fff;
+    padding: 0.7em 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;  
+    text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 0.3);      
+    transition: all 200ms;        
+}
+
+.btn {
+    &--light {
+        @extend %btn;
+
+        color: #fff;
+        border-color: #fff;
+
+        &:hover {
+            color: $black;
+            background-color: #fff; 
+        }
+    }
+    
+    &--dark {
+        @extend %btn;
+
+        color: $black;
+        border-color: $black;
+
+        &:hover,
+        &.current {
+            color: #fff;
+            background-color: $black;            
+        }
+    }
+}
+
+.fa-external-link-alt {
+    font-size: 0.5em;   
+    padding-left: 0.5em;
+    vertical-align: top;
+}

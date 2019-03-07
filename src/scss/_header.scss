@@ -1,0 +1,64 @@
+.page-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    color: #fff;
+    text-align: center;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
+    border-top: 0.8em solid $themeColor;
+    background-color: rgba(10, 10, 10, 0.85);    
+    overflow: hidden;
+
+    h1,
+    h2 {
+        animation: fadeInUp 800ms ease-out forwards;
+    }
+
+    h1 {
+        font-size: calc(2.4em + 3.4vw);    
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 0.3em;
+    }
+
+    h2 {
+        font-size: calc(1.2em + 1.7vw);
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
+    &__image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.main-content-link {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
+    transition: color 300ms;
+
+    &:hover {
+        color: #fff;
+
+        .fa-chevron-circle-down {
+            transform: translateY(0.1em);
+        }
+    }
+}
+
+.fa-chevron-circle-down {
+    transition: transform 300ms;
+}
