@@ -44,7 +44,15 @@
             .portfolio-item__image {
                 transform: scale(1.15);
             }
-        }        
+        }
+        
+        &__link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
 
         &__image {
             width: 100%;
@@ -87,6 +95,7 @@
                 font-size: 1.55em;
                 border: 0.1em solid #fff;
                 padding: 0.7em 1em;
+                z-index: 1;
             }
         } 
         
