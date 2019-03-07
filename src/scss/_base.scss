@@ -46,7 +46,7 @@ strong {
 
 %btn {
     display: inline-block;
-    font: inherit;    
+    font: inherit;
     color: inherit;
     background: none;
     border-radius: 0.5em;
@@ -54,9 +54,9 @@ strong {
     padding: 0.7em 1em;
     cursor: pointer;
     text-align: center;
-    text-decoration: none;  
-    text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 0.3);      
-    transition: all 200ms;        
+    text-decoration: none;
+    text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 0.3);
+    transition: all 200ms;
 }
 
 .btn {
@@ -68,10 +68,10 @@ strong {
 
         &:hover {
             color: $black;
-            background-color: #fff; 
+            background-color: #fff;
         }
     }
-    
+
     &--dark {
         @extend %btn;
 
@@ -81,13 +81,13 @@ strong {
         &:hover,
         &.current {
             color: #fff;
-            background-color: $black;            
+            background-color: $black;
         }
     }
 }
 
 .fa-external-link-alt {
-    font-size: 0.5em;   
+    font-size: 0.5em;
     padding-left: 0.5em;
     vertical-align: top;
 }
