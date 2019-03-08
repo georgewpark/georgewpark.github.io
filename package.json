@@ -20,5 +20,10 @@
         "postcss-cli": "^6.1.2",
         "uglify-js": "^3.4.9"
     },
-    "author": "George Park"
+    "author": "George Park",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/georgewpark/georgewpark.github.io"
+    },
+    "homepage": "https://www.georgewpark.com/"
 }
