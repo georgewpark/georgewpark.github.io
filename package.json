@@ -5,8 +5,8 @@
         "watch:css": "nodemon -e scss -x \"run-s compile:css prefix:css\"",
         "compile:css": "node-sass --output-style compressed --source-map true -o build/css src/scss/styles.scss",
         "prefix:css": "postcss -u autoprefixer -b \"last 2 version\" -m -o build/css/styles.css build/css/styles.css",
-        "watch:js": "nodemon --watch src/js -x \"npm run compile:js\"",
-        "compile:js": "babel src/js/main.js -o build/js/main.js --presets=@babel/preset-env && npm run uglify:js",
+        "watch:js": "nodemon --watch src/js -x \"run-s compile:js uglify:js\"",
+        "compile:js": "babel src/js/main.js -o build/js/main.js --presets=@babel/preset-env",
         "uglify:js": "uglifyjs build/js/main.js -m toplevel --mangle-props -c -o build/js/main.js"
     },
     "devDependencies": {
