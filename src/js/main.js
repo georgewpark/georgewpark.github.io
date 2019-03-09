@@ -27,14 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const itemClasses = Array.from(item.classList);
 
+                    if (itemClasses.includes('show-item')) {
+                        item.classList.remove('show-item');
+                    }
+
                     if (itemClasses.includes(filter)) {
-                        //Show item
-                        if (itemClasses.includes('hide-item')) {
-                            item.classList.remove('hide-item');
-                        }
-                    } else {
-                        //Hide item
-                        item.classList.add('hide-item');
+                        setTimeout(() => item.classList.add('show-item'), 10);
                     }
                 });
 

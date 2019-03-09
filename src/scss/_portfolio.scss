@@ -28,6 +28,7 @@
     }
 
     &-item {
+        display: none;
         position: relative;
         height: 30em;
         border-radius: 0.5em;
@@ -99,8 +100,9 @@
             }
         }
 
-        &.hide-item {
-            display: none;
+        &.show-item {
+            display: block;
+            animation: fadeInUp 300ms ease-out;
         }
     }
 
