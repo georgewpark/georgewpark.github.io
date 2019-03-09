@@ -4,3 +4,9 @@
         transform: translateY(1em);
     }
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+}
