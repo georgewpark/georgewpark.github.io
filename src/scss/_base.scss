@@ -3,6 +3,10 @@
     scroll-behavior: smooth;
 }
 
+:focus {
+    outline: dotted thin;
+}
+
 *,
 *::before,
 *::after {
