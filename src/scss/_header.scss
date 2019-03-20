@@ -38,6 +38,16 @@
         object-fit: cover;
         z-index: -1;
     }
+
+    &__headshot {
+        width: 20vmin;
+        height: 20vmin;
+        border-radius: 50%;
+        border: 1vmin solid #fff;
+        margin-bottom: 1em;
+        animation: fadeInUp 800ms ease-out forwards;
+        box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
+    }
 }
 
 .main-content-link {
