@@ -46,6 +46,10 @@ strong {
     font-weight: 600;
     padding-top: 2em;
     margin-bottom: 1em;
+
+    @media screen and (max-width: 800px) {
+        font-size: 2.5em;
+    }
 }
 
 %btn {

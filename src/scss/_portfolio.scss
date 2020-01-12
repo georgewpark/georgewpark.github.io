@@ -7,6 +7,10 @@
             font-size: 1.8em;
             margin-right: 1em;
             margin-bottom: 1em;
+
+            @media screen and (max-width: 800px) {
+                font-size: 1.6em;
+            }
         }
     }
 
@@ -116,6 +120,10 @@
             font-size: 1.8em;
             min-width: 13.8em;
             margin: 0.5em;
+
+            @media screen and (max-width: 800px) {
+                font-size: 1.6em;
+            }
         }
     }
 }
