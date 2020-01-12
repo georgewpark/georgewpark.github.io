@@ -69,6 +69,7 @@ strong {
 
         color: #fff;
         border-color: #fff;
+        outline-color: #fff;
 
         &:hover {
             color: $black;
@@ -81,6 +82,7 @@ strong {
 
         color: $black;
         border-color: $black;
+        outline-color: $black;
 
         &:hover,
         &.current {
