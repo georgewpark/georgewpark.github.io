@@ -10,19 +10,19 @@
     background-color: rgba(30, 30, 30, 0.85);
     overflow: hidden;
 
-    h1,
-    h2 {
+    &__heading,
+    &__subheading {
         animation: fadeInUp 800ms ease-out forwards;
     }
 
-    h1 {
+    &__heading {
         font-size: calc(2.4em + 3.4vw);
         font-weight: 600;
         line-height: 1.2;
         margin-bottom: 0.26em;
     }
 
-    h2 {
+    &__subheading {
         font-size: calc(1.2em + 1.7vw);
         font-weight: 300;
         line-height: 1.3;
