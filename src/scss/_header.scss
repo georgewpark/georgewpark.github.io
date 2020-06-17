@@ -10,11 +10,6 @@
     background-color: rgba(30, 30, 30, 0.85);
     overflow: hidden;
 
-    &__heading,
-    &__subheading {
-        animation: fadeInUp 800ms ease-out forwards;
-    }
-
     &__heading {
         font-size: calc(2.4em + 3.4vw);
         font-weight: 600;
@@ -48,7 +43,6 @@
         border-radius: 50%;
         border: 1vmin solid #fff;
         margin-bottom: 1.2em;
-        animation: fadeInUp 800ms ease-out forwards;
         box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
     }
 }
