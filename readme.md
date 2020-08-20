@@ -1,6 +1,6 @@
 # Personal Website
 
 ## Installation
-First run 'npm install' to install dependencies.
+First run `npm install` to install dependencies.
 
-Then run 'npm start' to start build process.
+Then run `npm start` to start build process.
