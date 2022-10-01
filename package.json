@@ -1,29 +1,29 @@
 {
-    "name": "personal-website",
-    "scripts": {
-        "start": "npm-run-all -p watch:*",
-        "watch:css": "nodemon -e scss -x \"run-s compile:css prefix:css\"",
-        "compile:css": "node-sass --output-style compressed --source-map true -o build/css src/scss/styles.scss",
-        "prefix:css": "postcss -u autoprefixer -b \"last 2 version\" -m -o build/css/styles.css build/css/styles.css",
-        "watch:js": "nodemon --watch src/js -x \"run-s compile:js uglify:js\"",
-        "compile:js": "babel src/js/main.js -o build/js/main.js --presets=@babel/preset-env",
-        "uglify:js": "uglifyjs build/js/main.js -m toplevel --mangle-props -c -o build/js/main.js"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.8.4",
-        "@babel/core": "^7.9.0",
-        "@babel/preset-env": "^7.9.5",
-        "autoprefixer": "^9.7.6",
-        "node-sass": "^4.13.1",
-        "nodemon": "^1.19.4",
-        "npm-run-all": "^4.1.5",
-        "postcss-cli": "^6.1.3",
-        "uglify-js": "^3.8.1"
-    },
-    "author": "George Park",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/georgewpark/georgewpark.github.io"
-    },
-    "homepage": "https://www.georgewpark.com/"
+  "name": "personal-website",
+  "scripts": {
+    "start": "npm-run-all -p watch:*",
+    "watch:css": "nodemon -e scss -x \"run-s compile:css prefix:css\"",
+    "compile:css": "node-sass --output-style compressed --source-map true -o build/css src/scss/styles.scss",
+    "prefix:css": "postcss -u autoprefixer -b \"last 2 version\" -m -o build/css/styles.css build/css/styles.css",
+    "watch:js": "nodemon --watch src/js -x \"run-s compile:js uglify:js\"",
+    "compile:js": "babel src/js/main.js -o build/js/main.js --presets=@babel/preset-env",
+    "uglify:js": "uglifyjs build/js/main.js -m toplevel --mangle-props -c -o build/js/main.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "autoprefixer": "^10.4.12",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0",
+    "uglify-js": "^3.17.2"
+  },
+  "author": "George Park",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgewpark/georgewpark.github.io"
+  },
+  "homepage": "https://www.georgewpark.com/"
 }
