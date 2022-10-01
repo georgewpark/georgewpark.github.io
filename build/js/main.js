@@ -1,1 +1,1 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".portfolio-filter"),r=document.querySelectorAll(".portfolio-item"),i="featured";t.addEventListener("click",function(t){var o=t.target;if(o.classList.contains("portfolio-filter__btn")){var e=o.textContent.toLowerCase().replace(" ","-"),n=document.querySelector(".current");e!==i&&(n.classList.remove("current"),o.classList.add("current"),r.forEach(function(t){t.classList.contains(e)?t.classList.add("show-item"):t.classList.remove("show-item")}),i=e)}})});
+"use strict";

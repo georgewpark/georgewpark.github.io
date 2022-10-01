@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="George W. Park">
-  <meta name="description" content="George W. Park is a front-end web developer based in the west of Scotland.">
+  <meta name="description" content="George W. Park is a front-end web developer based in Scotland.">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="d96pBgx3_EQlmvMJzz4huIfio0_d2RX0nAwM43M4Q74">
   <meta name="mobile-web-app-capable" content="yes">
@@ -20,11 +19,11 @@
   <!-- Facebook Open Graph -->
   <meta property="og:title" content="George W. Park | Front End Web Developer">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://georgewpark.com/">
-  <meta property="og:description" content="George W. Park is a front-end web developer based in the west of Scotland.">
+  <meta property="og:url" content="https://georgewpark.com/">
+  <meta property="og:description" content="George W. Park is a front-end web developer based in Scotland.">
   <meta property="og:site_name" content="georgewpark">
   <meta property="og:locale" content="en_UK">
-  <meta property="og:image" content="http://www.georgewpark.com/images/meta_image.jpg">
+  <meta property="og:image" content="https://www.georgewpark.com/images/meta_image.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,10 +33,10 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@georgepark_">
   <meta name="twitter:creator" content="@georgepark_">
-  <meta name="twitter:url" content="http://georgewpark.com/">
+  <meta name="twitter:url" content="https://georgewpark.com/">
   <meta name="twitter:title" content="George W. Park | Front End Web Developer">
-  <meta name="twitter:description" content="George W. Park is a front-end web developer based in the west of Scotland.">
-  <meta name="twitter:image" content="http://www.georgewpark.com/images/meta_image.jpg">
+  <meta name="twitter:description" content="George W. Park is a front-end web developer based in Scotland.">
+  <meta name="twitter:image" content="https://www.georgewpark.com/images/meta_image.jpg">
   <meta name="twitter:image:alt" content="Computer monitor and laptop displaying a code editor">
 
   <!-- Page Title -->
@@ -54,8 +53,9 @@
 
   <!-- External CSS Files -->
   <link rel="stylesheet" href="/build/css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- External JavaScript File -->
+  <script src="/build/js/main.js" defer></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118583822-1"></script>
@@ -65,348 +65,43 @@
     gtag('js', new Date());
     gtag('config', 'UA-118583822-1');
   </script>
-
-  <!-- External JavaScript File -->
-  <script src="/build/js/main.js" defer></script>
-
 </head>
 <body>
-  <!-- Header -->
-  <header class="page-header">
-    <div class="container">
-      <img srcset="images/header-500w.jpg 500w, images/header-1000w.jpg 1200w, images/header-2000w.jpg 2000w" sizes="(max-width: 500px) 480px, (max-width: 1200px) 1000px, 2000px" src="images/header.jpg" alt="" class="page-header__image">
-      <img src="/images/headshot.jpg" alt="" class="page-header__headshot">
-      <h1 class="page-header__heading">George W. Park</h1>
-      <h2 class="page-header__subheading">Front-End Web Developer</h2>
-      <a href="#main" aria-label="Go to main content" class="main-content-link"><i class="fas fa-chevron-circle-down" aria-hidden="true"></i></a>
+  <main>
+    <div class="headshot">
+      <img src="/images/headshot.jpg" alt="" class="headshot__image">
     </div>
-  </header>
-  <!-- Main Content -->
-  <main id="main">
-    <!-- About Section -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <h2 class="section__heading">About</h2>
-        <p>Hello! I'm George, a <strong>front-end web developer</strong> based in Scotland.</p>
-        <p>I specialise in building dynamic user interfaces using modern HTML, CSS, and JavaScript, with a focus on usability, accessibility, and performance.</p>
-        <p>I frequently post my experiments with front-end technologies to <a href="https://codepen.io/GeorgePark/pens/popular/" target="_blank" rel="noopener noreferrer">CodePen<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and <a href="https://github.com/georgewpark" target="_blank" rel="noopener noreferrer">GitHub<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
-        <p>If you're interested in working with me or have any questions then don't hesitate to <a href="mailto:georgewpark@outlook.com">contact me</a>.</p>
-      </div>
-    </section>
-    <!-- Portfolio Section -->
-    <section class="portfolio-section" id="projects">
-      <div class="container">
-        <h2 class="section__heading">Projects</h2>
-        <!-- Portfolio Filter -->
-        <ul class="portfolio-filter">
-          <li>
-            <button class="portfolio-filter__btn btn--dark current">Featured</button>
-          </li>
-          <li>
-            <button class="portfolio-filter__btn btn--dark">CSS Grid</button>
-          </li>
-          <li>
-            <button class="portfolio-filter__btn btn--dark">React</button>
-          </li>
-          <li>
-            <button class="portfolio-filter__btn btn--dark">Speech APIs</button>
-          </li>
-          <li>
-            <button class="portfolio-filter__btn btn--dark">Emoji</button>
-          </li>
-          <li>
-            <button class="portfolio-filter__btn btn--dark">Other</button>
-          </li>
-        </ul>
-        <!-- Portfolio Gallery -->
-        <div class="portfolio-gallery">
-          <div class="portfolio-item featured emoji show-item">
-            <video class="portfolio-item__video" src="/video/portfolio/emoji-town.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">3D Emoji Town</h3>
-              <p class="portfolio-item__info-desc">An animated 3D town created using emojis and pure CSS.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/MqVoYP" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/MqVoYP/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item featured speech-apis show-item">
-            <video class="portfolio-item__video" src="/video/portfolio/change-color-with-voice.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Change Color With Voice</h3>
-              <p class="portfolio-item__info-desc">Using the JavaScript speech recognition API to take a spoken color from a user and apply that color to an element.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/gKrVJe/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/gKrVJe/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item featured css-grid show-item">
-            <img src="/images/portfolio/instagram-profile-layout.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Instagram Profile Layout</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid with flexbox fallback to re-create an Instagram profile layout.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/VXrwOP/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/VXrwOP/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item css-grid">
-            <img src="/images/portfolio/lastpass-vault-layout.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">LastPass Vault Layout</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid with flexbox fallback to re-create the LastPass vault layout.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/PQweLr/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/PQweLr/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item css-grid">
-            <img src="/images/portfolio/youtube-channel-layout.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">YouTube Channel Layout</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid with flexbox fallback to re-create the layout of a YouTube channel page.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/oEwYYy/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/oEwYYy/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item css-grid">
-            <img src="/images/portfolio/image-gallery.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Image Gallery</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid with flexbox fallback to create a responsive image gallery with no media queries.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/vdqYom/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/vdqYom/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item css-grid">
-            <img src="/images/portfolio/trello-board-layout.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Trello Board Layout</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid with flexbox fallback to re-create the layout of a Trello board.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/bLLzJK/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/bLLzJK/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item css-grid">
-            <video class="portfolio-item__video" src="/video/portfolio/full-screen-video.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Full-Screen Background Video</h3>
-              <p class="portfolio-item__info-desc">Using CSS grid and the 'object-fit' property to create a full-screen background video.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/zpRjRK/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/zpRjRK/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item emoji">
-            <video class="portfolio-item__video" src="/video/portfolio/emoji-toggles.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Responsive Emoji Toggles</h3>
-              <p class="portfolio-item__info-desc">Using the CSS checkbox hack to create a variety of responsive emoji toggles.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/xJREOG/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/xJREOG/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item featured react show-item">
-            <video class="portfolio-item__video" src="/video/portfolio/pizza-builder.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Pizza Builder</h3>
-              <p class="portfolio-item__info-desc">A 'create your own' style visual pizza builder using React.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/xeGmmP/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/xeGmmP/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item react">
-            <img src="/images/portfolio/giphy-search-api.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">GIPHY Search API</h3>
-              <p class="portfolio-item__info-desc">Using React to search for and display gifs fetched from the GIPHY Search API.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/bMWGRB/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/bMWGRB/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item featured react show-item">
-            <img src="/images/portfolio/rick-and-morty.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Rick and Morty Character Search</h3>
-              <p class="portfolio-item__info-desc">Using React to search for and display character information fetched from the Rick & Morty API.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/erPRKg/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/erPRKg/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item speech-apis">
-            <video class="portfolio-item__video" src="/video/portfolio/lock-unlock-with-voice.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Lock & Unlock With Voice</h3>
-              <p class="portfolio-item__info-desc">Using the JavaScript speech recognition API to retrieve a spoken note from a user and display that note on-screen.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/GBYqZv/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/GBYqZv/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item speech-apis">
-            <video class="portfolio-item__video" src="/video/portfolio/filter-image-with-voice.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Filter Image With Voice</h3>
-              <p class="portfolio-item__info-desc">Using the JavaScript speech recognition API can be used to take a spoken filter from a user and apply that filter to an image.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/mKgENQ/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/mKgENQ/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item speech-apis">
-            <video class="portfolio-item__video" src="/video/portfolio/take-notes-with-voice.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Take Notes With Voice</h3>
-              <p class="portfolio-item__info-desc">Using the JavaScript speech recognition API to retrieve a spoken word from a user and perform an action if valid.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/jpovrm/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/jpovrm/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item speech-apis">
-            <video class="portfolio-item__video" src="/video/portfolio/change-element-with-voice.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Change Element With Voice</h3>
-              <p class="portfolio-item__info-desc">Using the JavaScript speech recognition API to retrieve a spoken element from a user a display that element on-screen.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/RymbRB/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/RymbRB/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item speech-apis">
-            <video class="portfolio-item__video" src="/video/portfolio/phonetic-alphabet.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Phonetic Alphabet with Speech Synthesis API</h3>
-              <p class="portfolio-item__info-desc"> Press a letter key and get the corresponding name from the NATO phonetic alphabet.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/aGNjZB/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/aGNjZB/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item emoji">
-            <video class="portfolio-item__video" src="/video/portfolio/emoji-temperature-slider.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Emoji Temperature Slider</h3>
-              <p class="portfolio-item__info-desc">A temperature slider that uses emojis to aid in envisioning how you'll most likely feel at the given temperature.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/oVgGyM/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/oVgGyM/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item emoji">
-            <video class="portfolio-item__video" src="/video/portfolio/simple-emoji-animations.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Simple Emoji Animations</h3>
-              <p class="portfolio-item__info-desc">Using CSS pseudo-elements to create simple emoji animations.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/aazBGj/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/aazBGj/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item emoji">
-            <video class="portfolio-item__video" src="/video/portfolio/emoji-scratch-card.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Emoji Scratch Card</h3>
-              <p class="portfolio-item__info-desc">An emoji based 'match 3' style scratch card/lottery game.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/WgGmPq/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/WgGmPq/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item emoji">
-            <video class="portfolio-item__video" src="/video/portfolio/trick-or-treat-box.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Trick or Treat Surprise Box</h3>
-              <p class="portfolio-item__info-desc">A Halloween "Trick or Treat" surprise box. Click to open the box with a 50/50 chance of getting a trick or a treat.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/OBBNmL/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/OBBNmL/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item featured other show-item">
-            <video class="portfolio-item__video" src="/video/portfolio/decision-tree.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Decision Tree</h3>
-              <p class="portfolio-item__info-desc">Using Tailwind CSS to create a decision tree component.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/poVwZzP/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/poVwZzP/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item other">
-            <video class="portfolio-item__video" src="/video/portfolio/live-screen-effect.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Live Screen Effect Using matrix3d()</h3>
-              <p class="portfolio-item__info-desc">Using the matrix3d() CSS function to transform an iframe in 3D space to create an interactive laptop screen effect.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/QQZXNy/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/QQZXNy/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item other">
-            <video class="portfolio-item__video" src="/video/portfolio/radial-gradient-spotlight.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Radial Gradient Spotlight Effect</h3>
-              <p class="portfolio-item__info-desc">Using CSS radial gradients to create a focusable spotlight effect.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/ELemzZ/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/ELemzZ/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item other">
-            <video class="portfolio-item__video" src="/video/portfolio/refracted-text-effect.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Refracted Floating Text Effect</h3>
-              <p class="portfolio-item__info-desc">Using pure CSS to create an animated refracted floating text effect.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/wEQpmo/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/wEQpmo/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item other">
-            <video class="portfolio-item__video" src="/video/portfolio/black-mirror-text-effect.mp4" autoplay muted loop aria-hidden="true"></video>
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">Black Mirror Cracked Text Effect</h3>
-              <p class="portfolio-item__info-desc">Using pure CSS can be used to re-create the cracked text effect from the Black Mirror TV show intro.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/jeBbGN/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/jeBbGN/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <div class="portfolio-item other">
-            <img src="/images/portfolio/gradient-rounded-borders.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">CSS Gradient Rounded Borders</h3>
-              <p class="portfolio-item__info-desc">Using the CSS background-clip property to rounded gradient borders.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/EEGJEj/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/EEGJEj/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div>
-          <!-- <div class="portfolio-item other">
-            <img src="/images/portfolio/gradient-clip-borders.jpg" alt="" class="portfolio-item__image">
-            <div class="portfolio-item__info">
-              <h3 class="portfolio-item__info-title">CSS Gradient Clip-Path Borders</h3>
-              <p class="portfolio-item__info-desc">Using the CSS clip-path property to create a variety of shaped gradient borders.</p>
-              <a class="portfolio-item__info-btn btn--light" href="https://cdpn.io/ZoaRrV/" target="_blank" rel="noopener noreferrer">View Project<i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <a tabindex="-1" class="portfolio-item__link" href="https://cdpn.io/ZoaRrV/" target="_blank" rel="noopener noreferrer" aria-label="View Project"></a>
-          </div> -->
-        </div>
-        <!-- Portfolio View More Links -->
-        <ul class="portfolio-view-more">
-          <li>
-            <a href="https://codepen.io/GeorgePark/pens/popular/" target="_blank" rel="noopener noreferrer" class="portfolio-view-more__btn btn--dark">View More on CodePen<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/georgewpark?tab=repositories" target="_blank" rel="noopener noreferrer" class="portfolio-view-more__btn btn--dark">View More on GitHub<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <!-- Social Links -->
-      <ul class="social-links">
-        <li>
-          <a href="mailto:georgewpark@outlook.com" aria-label="Email" class="social-links__link"><i class="far fa-envelope" aria-hidden="true"></i></a>
+    <h1 class="title">George W. Park</h1>
+    <h2 class="subtitle">Front-End Web Developer</h2>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a href="https://codepen.io/GeorgePark/" aria-label="CodePen" target="_blank" rel="noopener noreferrer" class="main-nav__link">
+            CodePen SVG
+          </a>
         </li>
         <li>
-          <a href="https://twitter.com/GeorgePark_" aria-label="Twitter" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://github.com/georgewpark" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="main-nav__link">
+            GitHub SVG
+          </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/georgewpark/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/GeorgePark_" aria-label="Twitter" target="_blank" rel="noopener noreferrer" class="main-nav__link">
+            Twitter SVG
+          </a>
         </li>
         <li>
-          <a href="https://codepen.io/GeorgePark/" aria-label="CodePen" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-codepen" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/georgewpark/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="main-nav__link">
+            LinkedIn SVG
+          </a>
         </li>
         <li>
-          <a href="https://github.com/georgewpark" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="mailto:georgewpark@outlook.com" aria-label="Email me" class="main-nav__link">
+            Email SVG
+          </a>
         </li>
       </ul>
-    </div>
-  </footer>
+    </nav>
+  </main>
 </body>
 </html>
