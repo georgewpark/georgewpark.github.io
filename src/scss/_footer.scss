@@ -1,22 +1,22 @@
 .page-footer {
-    padding: 1.5em 0;
-    background-color: $black;
+  padding: 1.5em 0;
+  background-color: $black;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    &__link {
-        display: block;
-        font-size: 2.5em;
-        color: rgba(255, 255, 255, 0.45);
-        padding: 0.2em 0.5em;
-        transition: color 300ms;
+  &__link {
+    display: block;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.45);
+    padding: 0.2em 0.5em;
+    transition: color 300ms;
 
-        &:hover,
-        &:focus {
-            color: rgba(255, 255, 255, 1);
-        }
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
     }
+  }
 }

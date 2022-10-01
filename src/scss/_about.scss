@@ -1,22 +1,22 @@
 .about-section {
-    p {
-        font-size: 2em;
-        line-height: 2.0;
-        margin-bottom: 1em;
-        max-width: 52em;
+  p {
+    font-size: 2em;
+    line-height: 2.0;
+    margin-bottom: 1em;
+    max-width: 52em;
 
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-
-        @media screen and (max-width: 800px) {
-            font-size: 1.6em;
-        }
+    &:last-of-type {
+      margin-bottom: 0;
     }
 
-    .fa-external-link-alt {
-        font-size: 0.4em;
-        margin-top: 1em;
-        padding-left: 0.2em;
+    @media screen and (max-width: 800px) {
+      font-size: 1.6em;
     }
+  }
+
+  .fa-external-link-alt {
+    font-size: 0.4em;
+    margin-top: 1em;
+    padding-left: 0.2em;
+  }
 }
