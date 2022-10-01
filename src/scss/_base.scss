@@ -3,10 +3,6 @@
   scroll-behavior: smooth;
 }
 
-:focus {
-  outline: dotted thin;
-}
-
 *,
 *::before,
 *::after {
@@ -17,16 +13,16 @@ body {
   font-family: $fontStack;
   font-weight: 400;
   font-display: swap;
-  color: $black;
+  color: #fff;
 }
 
 main {
-  background-color: #fcfcfc;
+  background-color: #302d32;
+  background-image: linear-gradient(darken(#302d32, 4), #302d32);
 }
 
 a {
-  color: $black;
-  // text-decoration-color:  $themeColor;
+  color: #fff;
   -webkit-text-decoration-skip: auto;
   text-decoration-skip: auto;
 }
@@ -46,6 +42,7 @@ strong {
   font-weight: 600;
   padding-top: 2em;
   margin-bottom: 1em;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.25);
 
   @media screen and (max-width: 800px) {
     font-size: 2.5em;
@@ -73,10 +70,9 @@ strong {
 
     color: #fff;
     border-color: #fff;
-    outline-color: #fff;
 
     &:hover {
-      color: $black;
+      color: #111;
       background-color: #fff;
     }
   }
@@ -84,14 +80,18 @@ strong {
   &--dark {
     @extend %btn;
 
-    color: $black;
-    border-color: $black;
-    outline-color: $black;
+    color: #eee;
+    border-color: #111;
+    background-color: #2c2c2c;
 
-    &:hover,
+    &:hover {
+      color: #fff;
+      background-color: #151515;
+    }
+
     &.current {
       color: #fff;
-      background-color: $black;
+      background-color: #111;
     }
   }
 }

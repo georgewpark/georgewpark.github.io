@@ -1,6 +1,6 @@
 .page-footer {
   padding: 1.5em 0;
-  background-color: $black;
+  background-image: linear-gradient(#222, #1c1c1c);
 }
 
 .social-links {
@@ -10,7 +10,7 @@
   &__link {
     display: block;
     font-size: 2.5em;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.5);
     padding: 0.2em 0.5em;
     transition: color 300ms;
 

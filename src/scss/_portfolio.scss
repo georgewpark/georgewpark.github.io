@@ -7,6 +7,7 @@
       font-size: 1.8em;
       margin-right: 1em;
       margin-bottom: 1em;
+      box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.25);
 
       @media screen and (max-width: 800px) {
         font-size: 1.6em;
@@ -19,8 +20,8 @@
     // grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
-    min-height: 62em;
-    margin-bottom: 3em;
+    min-height: 68em;
+    padding-bottom: 5em;
 
     @media screen and (max-width: 1000px) {
       grid-template-columns: repeat(2, 1fr);
@@ -36,9 +37,26 @@
     position: relative;
     height: 30em;
     border-radius: 0.5em;
-    border: 0.1em solid #ddd;
+    border: 0.1em solid #333;
     text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    background-color: #222;
+    isolation: isolate;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+      border: 0.5em solid #fff;
+      border-top-color: transparent;
+      transform: translate(-50%, -50%) rotate(0deg);
+      z-index: -1;
+      animation: loader 0.6s linear infinite;
+    }
 
     &:hover,
     &:focus-within {
