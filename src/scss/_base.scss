@@ -44,14 +44,14 @@ strong {
 }
 
 .section__heading {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 600;
   padding-top: 2em;
   margin-bottom: 1em;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.25);
 
-  @media screen and (max-width: 800px) {
-    font-size: 2.5em;
+  @media screen and (min-width: 800px) {
+    font-size: 3em;
   }
 }
 
