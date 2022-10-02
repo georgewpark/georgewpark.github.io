@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Check if filter button was pressed
     if (target.classList.contains('portfolio-filter__btn')) {
 
-      const selectedFilter = target.textContent.toLowerCase().replace(' ', '-');
+      const selectedFilter = target.id;
       const currentFilterBtn = document.querySelector('.current');
 
       //Check selected filter is not the current filter

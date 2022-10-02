@@ -1,22 +1,22 @@
 .page-footer {
   padding: 1.5em 0;
-  background-image: linear-gradient(#222, #1c1c1c);
-}
+  background-color: #111;
 
-.social-links {
-  display: flex;
-  justify-content: center;
+  .social-links {
+    display: flex;
+    justify-content: center;
 
-  &__link {
-    display: block;
-    font-size: 2.5em;
-    color: rgba(255, 255, 255, 0.5);
-    padding: 0.2em 0.5em;
-    transition: color 300ms;
+    &__link {
+      display: block;
+      font-size: 2.5em;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 0.2em 0.5em;
+      transition: color 200ms;
 
-    &:hover,
-    &:focus {
-      color: rgba(255, 255, 255, 1);
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+      }
     }
   }
 }

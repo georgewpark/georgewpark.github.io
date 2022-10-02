@@ -57,7 +57,8 @@
   transform: translateX(-50%);
   transition: color 300ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #fff;
 
     .fa-chevron-circle-down {
