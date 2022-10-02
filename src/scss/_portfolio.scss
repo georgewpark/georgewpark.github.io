@@ -40,10 +40,10 @@
     position: relative;
     height: 30em;
     border-radius: 0.5em;
-    border: 0.1em solid #333;
+    border: 0.1em solid lighten($black, 13);
     text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    background-color: #222;
+    background-color: lighten($black, 7);
     isolation: isolate;
 
     &::before {
@@ -54,7 +54,7 @@
       width: 5em;
       height: 5em;
       border-radius: 50%;
-      border: 0.5em solid #fff;
+      border: 0.5em solid $white;
       border-top-color: transparent;
       transform: translate(-50%, -50%) rotate(0deg);
       z-index: -1;
@@ -89,7 +89,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #fff;
+      color: $white;
       background-color: rgba(8, 8, 8, 0.95);
       padding: 2em;
       opacity: 0;
@@ -110,7 +110,7 @@
 
       &-btn {
         font-size: 1.55em;
-        border: 0.1em solid #fff;
+        border: 0.1em solid $white;
         padding: 0.7em 1em;
         z-index: 1;
 

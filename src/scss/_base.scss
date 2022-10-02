@@ -13,23 +13,23 @@ body {
   font-family: $openSans;
   font-weight: 400;
   font-display: swap;
-  color: #fff;
+  color: $white;
 }
 
 main {
-  background-color: #302d32;
-  background-image: linear-gradient(darken(#302d32, 4), #302d32);
+  background-color: $dark-purple;
+  background-image: linear-gradient(darken($dark-purple, 4), $dark-purple);
 }
 
 a {
-  color: #fff;
+  color: $white;
   -webkit-text-decoration-skip: auto;
   text-decoration-skip: auto;
   transition: color 200ms;
 
   &:hover,
   &:focus {
-    color: #d0c0ff;
+    color: $light-purple;
   }
 }
 
@@ -61,7 +61,7 @@ strong {
   color: inherit;
   background: none;
   border-radius: 0.5em;
-  border: 0.12em solid #fff;
+  border: 0.12em solid $white;
   padding: 0.7em 1em;
   cursor: pointer;
   text-align: center;
@@ -74,32 +74,31 @@ strong {
   &--light {
     @extend %btn;
 
-    color: #fff;
-    border-color: #fff;
+    color: $white;
+    border-color: $white;
 
     &:hover,
     &:focus {
-      color: #111;
-      background-color: #fff;
+      color: $black;
+      background-color: $white;
     }
   }
 
   &--dark {
     @extend %btn;
-
-    color: #eee;
-    border-color: #111;
-    background-color: #303030;
+    color: darken($white, 7);
+    border-color: $black;
+    background-color: lighten($black, 12);
 
     &:hover,
     &:focus {
-      color: #fff;
-      background-color: #151515;
+      color: $white;
+      background-color: lighten($black, 2);
     }
 
     &.current {
-      color: #fff;
-      background-color: #111;
+      color: $white;
+      background-color: $black;
     }
   }
 }

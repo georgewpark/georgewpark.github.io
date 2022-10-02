@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #fff;
+  color: $white;
   text-align: center;
   text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -41,7 +41,7 @@
     width: calc(6em + 8vw);
     height: calc(6em + 8vw);
     border-radius: 50%;
-    border: 0.8vmin solid #fff;
+    border: 0.8vmin solid $white;
     margin-bottom: 1.2em;
     box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
   }
@@ -53,13 +53,13 @@
   bottom: 1em;
   left: 50%;
   font-size: 3em;
-  color: rgba(255, 255, 255, 0.5);
+  color: transparentize($white, 0.5);
   transform: translateX(-50%);
   transition: color 300ms;
 
   &:hover,
   &:focus {
-    color: #fff;
+    color: $white;
 
     .fa-chevron-circle-down {
       transform: translateY(0.1em);
