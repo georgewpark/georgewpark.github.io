@@ -56,7 +56,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/build/css/app.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118583822-1"></script>
@@ -78,7 +77,11 @@
       <img src="/images/headshot.jpg" alt="" class="page-header__headshot">
       <h1 class="page-header__heading">George W. Park</h1>
       <h2 class="page-header__subheading">Front-End Web Developer</h2>
-      <a href="#main" aria-label="Go to main content" class="main-content-link"><i class="fas fa-chevron-circle-down" aria-hidden="true"></i></a>
+      <a href="#main" aria-label="Go to main content" class="main-content-link">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 14.414-5.707-5.707 1.414-1.414L12 13.586l4.293-4.293 1.414 1.414L12 16.414z" />
+        </svg>
+      </a>
     </div>
   </header>
   <!-- Main Content -->
@@ -385,19 +388,56 @@
       <nav aria-label="social">
         <ul class="social-links">
           <li>
-            <a href="https://codepen.io/GeorgePark/pens/popular" aria-label="CodePen" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-codepen" aria-hidden="true"></i></a>
+            <a href="https://codepen.io/GeorgePark/pens/popular" aria-label="CodePen" target="_blank" rel="noopener noreferrer" class="social-links__link">
+              <svg class="social-links__icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+                <path d="m2.893 15.656 8.076 5.384v-4.808l-4.474-2.986zm-.831-1.928 2.585-1.728-2.585-1.728zm10.969 7.312 8.076-5.384-3.6-2.41-4.476 2.986zm-1.031-6.602 3.643-2.438-3.643-2.438-3.643 2.438zm-5.505-3.68 4.474-2.99v-4.808l-8.076 5.384zm12.858 1.242 2.585 1.728v-3.456zm-1.848-1.246 3.6-2.41-8.074-5.384v4.808zm6.495-2.41v7.312.03c0 .346-.18.651-.452.825l-.004.002-10.969 7.313c-.162.109-.361.174-.576.174s-.414-.065-.58-.176l.004.002-10.969-7.312c-.276-.176-.456-.481-.456-.827 0-.011 0-.021.001-.032v.002-7.312c0-.009 0-.02 0-.031 0-.346.18-.651.452-.825l.004-.002 10.969-7.312c.162-.109.361-.174.576-.174s.414.065.58.176l-.004-.002 10.969 7.312c.276.176.456.481.456.827 0 .011 0 .021-.001.032z" />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/georgewpark?tab=repositories" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://github.com/georgewpark?tab=repositories" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="social-links__link">
+              <svg class="social-links__icon" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+                <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/GeorgePark_" aria-label="Twitter" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/GeorgePark_" aria-label="Twitter" target="_blank" rel="noopener noreferrer" class="social-links__link">
+              <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve" fill="currentColor" aria-hidden="true">
+                <path d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+              		c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+              		c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+              		C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+              		c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+              		c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+              		c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+              		c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+              		c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+              		c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+              		c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+              		C307.394,57.037,305.009,56.486,302.973,57.388z" />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/georgewpark/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="social-links__link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/georgewpark/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="social-links__link">
+              <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 504.4 504.4" style="enable-background:new 0 0 504.4 504.4;" xml:space="preserve" fill="currentColor" aria-hidden="true">
+                <path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+                  C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
+                  c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
+                  c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z" />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="mailto:georgewpark@outlook.com" aria-label="Email me" class="social-links__link"><i class="far fa-envelope" aria-hidden="true"></i></a>
+            <a href="mailto:georgewpark@outlook.com" aria-label="Email me" class="social-links__link">
+              <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve" fill="currentColor" aria-hidden="true">
+                <polygon points="0,127.5 0,274.219 104.8,206.1 	" />
+                <polygon points="400,274.219 400,127.5 295.2,206.1 	" />
+                <polygon points="200,277.5 130.357,225.268 0,310 0,340 400,340 400,310 269.643,225.268 	" />
+                <polygon points="0,90 200,240 400,90 400,60 0,60 	" />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>

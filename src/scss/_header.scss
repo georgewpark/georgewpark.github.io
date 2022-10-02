@@ -50,9 +50,8 @@
 .main-content-link {
   display: block;
   position: absolute;
-  bottom: 1em;
+  bottom: 2.5em;
   left: 50%;
-  font-size: 3em;
   color: transparentize($white, 0.5);
   transform: translateX(-50%);
   transition: color 300ms;
@@ -61,12 +60,15 @@
   &:focus {
     color: $white;
 
-    .fa-chevron-circle-down {
-      transform: translateY(0.1em);
+    svg {
+      transform: translateY(0.3em);
     }
   }
-}
 
-.fa-chevron-circle-down {
-  transition: transform 300ms;
+  svg {
+    width: 3.5em;
+    height: 3.5em;
+    transition: transform 300ms;
+    filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4));
+  }
 }
