@@ -1,4 +1,4 @@
 /node_modules
 /.tmp.drivedownload/
 /.tmp.driveupload/
-build/*.map
+build/app.*.map
