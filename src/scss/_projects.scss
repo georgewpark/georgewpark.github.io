@@ -1,4 +1,4 @@
-.portfolio {
+.projects {
   &-filter {
     display: flex;
     flex-wrap: wrap;
@@ -63,12 +63,12 @@
 
     &:hover,
     &:focus-within {
-      .portfolio-item__info {
+      .projects-item__info {
         opacity: 1;
       }
 
-      .portfolio-item__image,
-      .portfolio-item__video {
+      .projects-item__image,
+      .projects-item__video {
         transform: scale(1.15);
       }
     }
