@@ -1,8 +1,9 @@
 import { useContext } from 'react'
 import ProjectsContext from '../context/ProjectsContext'
+import { projectList } from '../data/ProjectData'
 
 const ProjectGrid = () => {
-  const { currentFilter, projectList } = useContext(ProjectsContext)
+  const { currentFilter } = useContext(ProjectsContext)
 
   return (
     <div className='projects-gallery' aria-live='polite'>

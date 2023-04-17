@@ -1,12 +1,8 @@
 import { useState, createContext, ReactNode, Dispatch, SetStateAction } from 'react'
-import { Project } from '../types/types'
-import { filterList, projectList } from '../data/ProjectData'
 
 type ProjectsContextType = {
-  filterList: string[],
   currentFilter: string,
-  setCurrentFilter: Dispatch<SetStateAction<string>>,
-  projectList: Project[]
+  setCurrentFilter: Dispatch<SetStateAction<string>>
 }
 
 type ProjectsProviderProps = {
@@ -16,16 +12,14 @@ type ProjectsProviderProps = {
 const ProjectsContext = createContext({} as ProjectsContextType)
 
 export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
-  const [currentFilter, setCurrentFilter] = useState(filterList[0])
+  const [currentFilter, setCurrentFilter] = useState('Featured')
 
   return (
     <ProjectsContext.Provider
       value={
         {
-          filterList,
           currentFilter,
-          setCurrentFilter,
-          projectList
+          setCurrentFilter
         }
       }
     >
