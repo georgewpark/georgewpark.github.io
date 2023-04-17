@@ -96,7 +96,7 @@ strong {
       background-color: lighten($black, 2);
     }
 
-    &.current {
+    &[aria-current='true'] {
       color: $white;
       background-color: $black;
     }
