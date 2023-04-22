@@ -1,16 +1,16 @@
-const path = require("path")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, "src/index.js")
+    app: path.resolve(__dirname, 'src/index.js'),
   },
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "js/[name].js",
-    clean: true
+    path: path.resolve(__dirname, 'build'),
+    filename: 'js/[name].js',
+    clean: true,
   },
   module: {
     rules: [
@@ -18,54 +18,51 @@ module.exports = {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 plugins: [
                   [
-                    "postcss-preset-env",
+                    'postcss-preset-env',
                     {
-                      browsers: "last 2 versions"
-                    }
+                      browsers: 'last 2 versions',
+                    },
                   ],
                 ],
-              }
-            }
+              },
+            },
           },
-          "sass-loader"
-        ]
+          'sass-loader',
+        ],
       },
       {
         test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
-              "@babel/preset-env",
-              ["@babel/preset-react", { "runtime": "automatic" }],
-              "@babel/preset-typescript"
-            ]
-          }
-        }
-      }
+              '@babel/preset-env',
+              ['@babel/preset-react', { runtime: 'automatic' }],
+              '@babel/preset-typescript',
+            ],
+          },
+        },
+      },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
   optimization: {
-    minimizer: [
-      new TerserPlugin(),
-      new CssMinimizerPlugin()
-    ]
+    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].css"
-    })
+      filename: 'css/[name].css',
+    }),
   ],
   watch: true,
 }
