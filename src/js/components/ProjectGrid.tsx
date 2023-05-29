@@ -11,6 +11,11 @@ const ProjectGrid = () => {
         const showProject = project.categories.includes(
           currentFilter.toLowerCase().replace(' ', '-')
         )
+        const projectUrl = project.github
+          ? `https://github.com/georgewpark/${project.title
+              .split(' ')
+              .join('-')}`
+          : `https://cdpn.io/${project.id}/`
 
         return (
           <div
@@ -42,7 +47,7 @@ const ProjectGrid = () => {
               <p className='projects-item__info-desc'>{project.description}</p>
               <a
                 className='projects-item__info-btn btn--light'
-                href={`https://cdpn.io/${project.id}/`}
+                href={projectUrl}
                 target='_blank'
                 rel='noopener noreferrer'
               >

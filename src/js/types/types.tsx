@@ -4,5 +4,6 @@ export type Project = {
   description: string
   image?: string | null
   video?: string | null
+  github?: boolean
   categories: string[]
 }

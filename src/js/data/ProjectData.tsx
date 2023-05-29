@@ -18,6 +18,7 @@ export const projectList: Project[] = [
     description:
       'Using React to search and display character information retrieved from the Rick & Morty API.',
     image: 'rick-and-morty.jpg',
+    github: true,
     categories: ['featured', 'react'],
   },
   {
@@ -25,6 +26,7 @@ export const projectList: Project[] = [
     title: 'Pizza Builder',
     description: "A 'create your own' style visual pizza builder using React.",
     video: 'pizza-builder.mp4',
+    github: true,
     categories: ['featured', 'react', 'css-grid'],
   },
   {
@@ -100,10 +102,11 @@ export const projectList: Project[] = [
   },
   {
     id: 'bMWGRB',
-    title: 'GIPHY Search API',
+    title: 'GIPHY Search',
     description:
       'Using React to search and display gifs retrieved from the GIPHY Search API.',
     image: 'giphy-search-api.jpg',
+    github: true,
     categories: ['react'],
   },
   {
@@ -112,6 +115,7 @@ export const projectList: Project[] = [
     description:
       'Using React to retrieve mission data from the SpaceX API and display in a responsive table.',
     image: 'spacex-launches-table.jpg',
+    github: true,
     categories: ['react'],
   },
   {
