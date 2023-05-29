@@ -43,10 +43,13 @@ strong {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 6em;
+}
+
 .section__heading {
   font-size: 2.5em;
   font-weight: 600;
-  padding-top: 2em;
   margin-bottom: 1em;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.25);
 
