@@ -12,10 +12,8 @@ const ProjectGrid = () => {
           currentFilter.toLowerCase().replace(' ', '-')
         )
         const projectUrl = project.github
-          ? `https://github.com/georgewpark/${project.title
-              .split(' ')
-              .join('-')}`
-          : `https://cdpn.io/${project.id}/`
+          ? `github.com/georgewpark/${project.title.split(' ').join('-')}`
+          : `cdpn.io/${project.id}`
 
         return (
           <div
@@ -27,7 +25,7 @@ const ProjectGrid = () => {
             {project.image && (
               <img
                 className='projects-item__image'
-                src={`/images/portfolio/${project.image}`}
+                src={`/images/portfolio/${project.image}.jpg`}
                 alt=''
                 loading='lazy'
               />
@@ -35,7 +33,7 @@ const ProjectGrid = () => {
             {project.video && (
               <video
                 className='projects-item__video'
-                src={`/video/portfolio/${project.video}`}
+                src={`/video/portfolio/${project.video}.mp4`}
                 autoPlay
                 muted
                 loop
@@ -47,7 +45,7 @@ const ProjectGrid = () => {
               <p className='projects-item__info-desc'>{project.description}</p>
               <a
                 className='projects-item__info-btn btn--light'
-                href={projectUrl}
+                href={`https://${projectUrl}/`}
                 target='_blank'
                 rel='noopener noreferrer'
               >
