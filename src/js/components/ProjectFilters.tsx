@@ -13,7 +13,7 @@ const ProjectFilters = () => {
             <button
               id={filter.toLowerCase().replace(' ', '-')}
               className={`projects-filter__btn btn--dark`}
-              aria-current={filter === currentFilter ? true : false}
+              aria-current={filter === currentFilter}
               onClick={() => setCurrentFilter(filter)}
             >
               {filter}
