@@ -11,16 +11,17 @@ const ProjectGrid = () => {
         const showProject = project.categories.includes(
           currentFilter.toLowerCase().replace(' ', '-')
         )
+          ? 'show-item'
+          : ''
         const projectUrl = project.github
           ? `github.com/georgewpark/${project.title.split(' ').join('-')}`
           : `cdpn.io/${project.id}`
+        const projectCategories = project.categories.join(' ')
 
         return (
           <div
             key={project.id}
-            className={`projects-item ${project.categories.join(' ')} ${
-              showProject ? 'show-item' : ''
-            }`}
+            className={`projects-item ${projectCategories} ${showProject}`}
           >
             {project.image && (
               <img
@@ -37,6 +38,7 @@ const ProjectGrid = () => {
                 autoPlay
                 muted
                 loop
+                playsInline
                 aria-hidden='true'
               />
             )}
