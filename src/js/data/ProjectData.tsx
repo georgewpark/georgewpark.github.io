@@ -2,9 +2,9 @@ import { Project } from '../types/types'
 
 export const filterList: string[] = [
   'Featured',
-  'CSS Grid',
+  'Layout',
   'React',
-  'Speech APIs',
+  'Speech',
   'Emoji',
   '3D',
   'Text Effects',
@@ -27,7 +27,7 @@ export const projectList: Project[] = [
     description: "A 'create your own' style visual pizza builder using React.",
     video: 'pizza-builder',
     github: true,
-    categories: ['featured', 'react', 'css-grid'],
+    categories: ['featured', 'react', 'layout'],
   },
   {
     id: 'MqVoYP',
@@ -42,7 +42,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create an Instagram profile layout.',
     image: 'instagram-profile-layout',
-    categories: ['featured', 'css-grid'],
+    categories: ['featured', 'layout'],
   },
   {
     id: 'gKrVJe',
@@ -50,7 +50,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to take a spoken CSS color and apply that color to a 3D cube.',
     video: 'change-color-with-voice',
-    categories: ['featured', 'speech-apis', '3d'],
+    categories: ['featured', 'speech', '3d'],
   },
   {
     id: 'PQweLr',
@@ -58,7 +58,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the LastPass vault layout.',
     image: 'lastpass-vault-layout',
-    categories: ['css-grid'],
+    categories: ['layout'],
   },
   {
     id: 'vdqYom',
@@ -66,7 +66,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to create a responsive image gallery with no media queries.',
     image: 'image-gallery',
-    categories: ['css-grid'],
+    categories: ['layout'],
   },
   {
     id: 'oEwYYy',
@@ -74,7 +74,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the layout of a YouTube channel page.',
     image: 'youtube-channel-layout',
-    categories: ['css-grid'],
+    categories: ['layout'],
   },
   {
     id: 'bLLzJK',
@@ -90,7 +90,7 @@ export const projectList: Project[] = [
     description:
       "Using CSS grid and the 'object-fit' property to create a full-screen background video.",
     video: 'full-screen-video',
-    categories: ['css-grid'],
+    categories: ['layout'],
   },
   {
     id: 'xJREOG',
@@ -124,7 +124,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to lock and unlock a padlock.',
     video: 'lock-unlock-with-voice',
-    categories: ['speech-apis'],
+    categories: ['speech'],
   },
   {
     id: 'mKgENQ',
@@ -132,7 +132,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to take a spoken CSS filter and apply that filter to an image.',
     video: 'filter-image-with-voice',
-    categories: ['speech-apis'],
+    categories: ['speech'],
   },
   {
     id: 'jpovrm',
@@ -140,7 +140,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to retrieve a spoken note and display that note on-screen with CRUD logic.',
     video: 'take-notes-with-voice',
-    categories: ['speech-apis'],
+    categories: ['speech'],
   },
   {
     id: 'aGNjZB',
@@ -148,7 +148,7 @@ export const projectList: Project[] = [
     description:
       'Press a letter key and get the corresponding term from the NATO phonetic alphabet combined with the speech synthesis API.',
     video: 'phonetic-alphabet',
-    categories: ['speech-apis'],
+    categories: ['speech'],
   },
   {
     id: 'RymbRB',
@@ -156,7 +156,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to retrieve a spoken chemical element and display that element on-screen.',
     video: 'change-element-with-voice',
-    categories: ['speech-apis'],
+    categories: ['speech'],
   },
   {
     id: 'oVgGyM',
