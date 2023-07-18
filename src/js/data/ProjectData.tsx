@@ -22,6 +22,15 @@ export const projectList: Project[] = [
     categories: ['featured', 'react'],
   },
   {
+    id: 'vYQjWXO',
+    title: 'Free-To-Play Games',
+    description:
+      'Using React to display and filter free-to-play games retrieved from the FreeToGame API.',
+    image: 'free-to-play-games',
+    github: true,
+    categories: ['featured', 'layout', 'react'],
+  },
+  {
     id: 'xeGmmP',
     title: 'Pizza Builder',
     description: "A 'create your own' style visual pizza builder using React.",
@@ -42,7 +51,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create an Instagram profile layout.',
     image: 'instagram-profile-layout',
-    categories: ['featured', 'layout'],
+    categories: ['layout'],
   },
   {
     id: 'gKrVJe',
@@ -90,7 +99,7 @@ export const projectList: Project[] = [
     description:
       "Using CSS grid and the 'object-fit' property to create a full-screen background video.",
     video: 'full-screen-video',
-    categories: ['layout'],
+    categories: [],
   },
   {
     id: 'xJREOG',
