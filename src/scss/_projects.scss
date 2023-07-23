@@ -69,7 +69,8 @@
 
       .projects-item__image,
       .projects-item__video {
-        transform: scale(1.15);
+        transform: scale(1.12);
+        filter: blur(1px) saturate(2);
       }
     }
 
@@ -78,7 +79,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 300ms ease-out;
+      transition: transform 300ms ease-out, filter 300ms;
     }
 
     &__info {
