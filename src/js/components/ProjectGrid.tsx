@@ -35,7 +35,9 @@ const ProjectGrid = () => {
               <video
                 className='projects-item__video'
                 src={`/video/portfolio/${project.video}.mp4`}
-                autoPlay
+                autoPlay={
+                  !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches
+                }
                 muted
                 loop
                 playsInline

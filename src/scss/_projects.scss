@@ -59,6 +59,10 @@
       transform: translate(-50%, -50%) rotate(0deg);
       z-index: -1;
       animation: loader 0.6s linear infinite;
+
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
     }
 
     &:hover,
@@ -71,6 +75,10 @@
       .projects-item__video {
         transform: scale(1.12);
         filter: blur(1px) saturate(2);
+
+        @media (prefers-reduced-motion: reduce) {
+          transform: none;
+        }
       }
     }
 
@@ -128,6 +136,10 @@
     &.show-item {
       display: block;
       animation: fadeIn 300ms ease-out;
+
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
     }
   }
 }
