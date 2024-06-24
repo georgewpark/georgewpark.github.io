@@ -2,8 +2,8 @@ export type Project = {
   id: string
   title: string
   description: string
-  image?: string | null
-  video?: string | null
+  image?: string
+  video?: string
   github?: boolean
   categories: string[]
 }
