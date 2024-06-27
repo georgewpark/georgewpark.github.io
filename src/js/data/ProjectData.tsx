@@ -46,6 +46,15 @@ export const projectList: Project[] = [
     categories: ['featured', 'emoji', '3d'],
   },
   {
+    id: 'bMWGRB',
+    title: 'GIPHY Search',
+    description:
+      'Using React to search and display gifs retrieved from the GIPHY Search API.',
+    image: 'giphy-search',
+    github: true,
+    categories: ['layout', 'react'],
+  },
+  {
     id: 'VXrwOP',
     title: 'Instagram Profile Layout',
     description:
@@ -83,7 +92,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the layout of a YouTube channel page.',
     image: 'youtube-channel-layout',
-    categories: ['layout'],
+    categories: [],
   },
   {
     id: 'bLLzJK',
@@ -108,15 +117,6 @@ export const projectList: Project[] = [
       'Using pure CSS checkbox functionality to create responsive emoji toggles.',
     video: 'emoji-toggles',
     categories: ['emoji'],
-  },
-  {
-    id: 'bMWGRB',
-    title: 'GIPHY Search',
-    description:
-      'Using React to search and display gifs retrieved from the GIPHY Search API.',
-    image: 'giphy-search-api',
-    github: true,
-    categories: ['react'],
   },
   {
     id: 'MBvMEN',
