@@ -25,6 +25,7 @@ a {
   color: $white;
   -webkit-text-decoration-skip: auto;
   text-decoration-skip: auto;
+  text-underline-offset: 2px;
   transition: color 200ms;
 
   &:hover,
