@@ -8,7 +8,7 @@ export const filterList: string[] = [
   'Emoji',
   '3D',
   'Text Effects',
-  'Other',
+  'Other'
 ]
 
 export const projectList: Project[] = [
@@ -19,7 +19,7 @@ export const projectList: Project[] = [
       'Using React to search and display character information retrieved from the Rick & Morty API.',
     image: 'rick-and-morty',
     github: true,
-    categories: ['featured', 'react'],
+    categories: ['featured', 'react']
   },
   {
     id: 'vYQjWXO',
@@ -28,7 +28,7 @@ export const projectList: Project[] = [
       'Using React to display and filter free-to-play games retrieved from the FreeToGame API.',
     image: 'free-to-play-games',
     github: true,
-    categories: ['featured', 'layout', 'react'],
+    categories: ['featured', 'layout', 'react']
   },
   {
     id: 'xeGmmP',
@@ -36,14 +36,14 @@ export const projectList: Project[] = [
     description: "A 'create your own' style visual pizza builder using React.",
     video: 'pizza-builder',
     github: true,
-    categories: ['featured', 'react', 'layout'],
+    categories: ['featured', 'react', 'layout']
   },
   {
     id: 'MqVoYP',
     title: '3D Emoji Town',
     description: 'An animated 3D town created using emojis and pure CSS.',
     video: 'emoji-town',
-    categories: ['featured', 'emoji', '3d'],
+    categories: ['featured', 'emoji', '3d']
   },
   {
     id: 'bMWGRB',
@@ -52,7 +52,7 @@ export const projectList: Project[] = [
       'Using React to search and display gifs retrieved from the GIPHY Search API.',
     image: 'giphy-search',
     github: true,
-    categories: ['layout', 'react'],
+    categories: ['layout', 'react']
   },
   {
     id: 'VXrwOP',
@@ -60,7 +60,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create an Instagram profile layout.',
     image: 'instagram-profile-layout',
-    categories: ['layout'],
+    categories: ['layout']
   },
   {
     id: 'gKrVJe',
@@ -68,7 +68,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to take a spoken CSS color and apply that color to a 3D cube.',
     video: 'change-color-with-voice',
-    categories: ['featured', 'speech', '3d'],
+    categories: ['featured', 'speech', '3d']
   },
   {
     id: 'PQweLr',
@@ -76,7 +76,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the LastPass vault layout.',
     image: 'lastpass-vault-layout',
-    categories: ['layout'],
+    categories: ['layout']
   },
   {
     id: 'vdqYom',
@@ -84,7 +84,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to create a responsive image gallery with no media queries.',
     image: 'image-gallery',
-    categories: ['layout'],
+    categories: ['layout']
   },
   {
     id: 'oEwYYy',
@@ -92,7 +92,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the layout of a YouTube channel page.',
     image: 'youtube-channel-layout',
-    categories: [],
+    categories: []
   },
   {
     id: 'bLLzJK',
@@ -100,7 +100,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS grid with flexbox fallback to re-create the layout of a Trello board.',
     image: 'trello-board-layout',
-    categories: [],
+    categories: []
   },
   {
     id: 'zpRjRK',
@@ -108,7 +108,7 @@ export const projectList: Project[] = [
     description:
       "Using CSS grid and the 'object-fit' property to create a full-screen background video.",
     video: 'full-screen-video',
-    categories: [],
+    categories: []
   },
   {
     id: 'xJREOG',
@@ -116,7 +116,7 @@ export const projectList: Project[] = [
     description:
       'Using pure CSS checkbox functionality to create responsive emoji toggles.',
     video: 'emoji-toggles',
-    categories: ['emoji'],
+    categories: ['emoji']
   },
   {
     id: 'MBvMEN',
@@ -125,7 +125,7 @@ export const projectList: Project[] = [
       'Using React to retrieve mission data from the SpaceX API and display in a responsive table.',
     image: 'spacex-launches-table',
     github: true,
-    categories: ['react'],
+    categories: ['react']
   },
   {
     id: 'GBYqZv',
@@ -133,7 +133,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to lock and unlock a padlock.',
     video: 'lock-unlock-with-voice',
-    categories: ['speech'],
+    categories: ['speech']
   },
   {
     id: 'mKgENQ',
@@ -141,7 +141,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to take a spoken CSS filter and apply that filter to an image.',
     video: 'filter-image-with-voice',
-    categories: ['speech'],
+    categories: ['speech']
   },
   {
     id: 'jpovrm',
@@ -149,7 +149,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to retrieve a spoken note and display that note on-screen with CRUD logic.',
     video: 'take-notes-with-voice',
-    categories: ['speech'],
+    categories: ['speech']
   },
   {
     id: 'aGNjZB',
@@ -157,7 +157,7 @@ export const projectList: Project[] = [
     description:
       'Press a letter key and get the corresponding term from the NATO phonetic alphabet combined with the speech synthesis API.',
     video: 'phonetic-alphabet',
-    categories: ['speech'],
+    categories: ['speech']
   },
   {
     id: 'RymbRB',
@@ -165,7 +165,7 @@ export const projectList: Project[] = [
     description:
       'Using the JavaScript speech recognition API to retrieve a spoken chemical element and display that element on-screen.',
     video: 'change-element-with-voice',
-    categories: ['speech'],
+    categories: ['speech']
   },
   {
     id: 'oVgGyM',
@@ -173,21 +173,21 @@ export const projectList: Project[] = [
     description:
       "A temperature slider that uses emojis to envision how you'll likely feel at the given temperature.",
     video: 'emoji-temperature-slider',
-    categories: ['emoji'],
+    categories: ['emoji']
   },
   {
     id: 'aazBGj',
     title: 'Simple Emoji Animations',
     description: 'Using CSS pseudo-elements to create simple emoji animations.',
     video: 'simple-emoji-animations',
-    categories: ['emoji'],
+    categories: ['emoji']
   },
   {
     id: 'WgGmPq',
     title: 'Emoji Scratch Card',
     description: "An emoji based 'match 3' style scratch card game.",
     video: 'emoji-scratch-card',
-    categories: ['emoji'],
+    categories: ['emoji']
   },
   {
     id: 'QWrxPyJ',
@@ -195,7 +195,7 @@ export const projectList: Project[] = [
     description:
       'A functional 3D CSS paper shredder, type to edit the text on the paper then press the green button to shred your text.',
     video: 'paper-shredder',
-    categories: ['3d'],
+    categories: ['3d']
   },
   {
     id: 'bQxRyN',
@@ -203,7 +203,7 @@ export const projectList: Project[] = [
     description:
       'Press the power button to switch on the printer and print a photo of a random doggo.',
     video: 'doggo-photo-printer',
-    categories: ['3d'],
+    categories: ['3d']
   },
   {
     id: 'OBBNmL',
@@ -211,14 +211,14 @@ export const projectList: Project[] = [
     description:
       'A Halloween surprise box, click to open the box with a 50/50 chance of getting a trick or a treat.',
     video: 'trick-or-treat-box',
-    categories: ['emoji', '3d'],
+    categories: ['emoji', '3d']
   },
   {
     id: 'wvEExqg',
     title: 'CSS Gradient Radar Scanner',
     description: 'A responsive animated radar scanner using CSS gradients.',
     video: 'radar-scanner',
-    categories: ['featured', 'other'],
+    categories: ['featured', 'other']
   },
   {
     id: 'EEGJEj',
@@ -226,14 +226,14 @@ export const projectList: Project[] = [
     description:
       'Using the CSS background-clip property to create rounded gradient borders.',
     image: 'gradient-rounded-borders',
-    categories: ['other'],
+    categories: ['other']
   },
   {
     id: 'poVwZzP',
     title: 'Decision Tree',
     description: 'Using Tailwind CSS to create a decision tree component.',
     video: 'decision-tree',
-    categories: ['other'],
+    categories: ['other']
   },
   {
     id: 'abGmrmr',
@@ -241,7 +241,7 @@ export const projectList: Project[] = [
     description:
       'Using the CSS color property to theme SVG elements with currentColor.',
     video: 'svg-currentcolor',
-    categories: ['other'],
+    categories: ['other']
   },
   {
     id: 'ELemzZ',
@@ -249,7 +249,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS radial gradients to create a focusable spotlight effect.',
     video: 'radial-gradient-spotlight',
-    categories: ['other'],
+    categories: ['other']
   },
   {
     id: 'QQZXNy',
@@ -257,7 +257,7 @@ export const projectList: Project[] = [
     description:
       'Using the matrix3d() CSS function to transform an iframe in 3D space to create an interactive laptop screen effect.',
     video: 'live-screen-effect',
-    categories: ['other'],
+    categories: ['other']
   },
   {
     id: 'wEQpmo',
@@ -265,7 +265,7 @@ export const projectList: Project[] = [
     description:
       'Using pure CSS to create an animated refracted floating text effect.',
     video: 'refracted-text-effect',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'jeBbGN',
@@ -273,7 +273,7 @@ export const projectList: Project[] = [
     description:
       'Using pure CSS to re-create the cracked text effect from the Black Mirror TV show intro.',
     image: 'black-mirror',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'zYOegLr',
@@ -281,7 +281,7 @@ export const projectList: Project[] = [
     description:
       'Using the CSS mix-blend-mode property to create animated transparent knockout text.',
     video: 'fade-in-text',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'MrjbEr',
@@ -289,7 +289,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS text-shadow and box-shadow properties to create an editable animated flickering neon sign effect.',
     video: 'neon-sign',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'LBPJGV',
@@ -297,7 +297,7 @@ export const projectList: Project[] = [
     description:
       'Using the CSS mix-blend-mode property to create knockout text with a custom YouTube video and light/dark theme.',
     video: 'knockout-video-text',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'bapRBQ',
@@ -305,7 +305,7 @@ export const projectList: Project[] = [
     description:
       'Using the background-clip CSS property to apply a gradient background to text.',
     image: 'gradient-text',
-    categories: ['text-effects'],
+    categories: ['text-effects']
   },
   {
     id: 'ZoaRrV',
@@ -313,6 +313,6 @@ export const projectList: Project[] = [
     description:
       'Using the CSS background-clip and clip-path properties to create shaped gradient borders.',
     image: 'gradient-clip-borders',
-    categories: [],
-  },
+    categories: []
+  }
 ]

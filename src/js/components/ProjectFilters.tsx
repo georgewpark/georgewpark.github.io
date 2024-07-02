@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { filterList } from '../data/ProjectData'
 import ProjectsContext from '../context/ProjectsContext'
+import { filterList } from '../data/ProjectData'
 
 const ProjectFilters = () => {
   const { currentFilter, setCurrentFilter } = useContext(ProjectsContext)

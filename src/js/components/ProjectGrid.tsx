@@ -9,7 +9,7 @@ const ProjectGrid = () => {
     <div className='projects-gallery' aria-live='polite'>
       {projectList.map(project => {
         const showProject = project.categories.includes(
-          currentFilter.toLowerCase().replace(' ', '-'),
+          currentFilter.toLowerCase().replace(' ', '-')
         )
           ? 'show-item'
           : ''

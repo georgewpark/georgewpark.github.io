@@ -1,9 +1,9 @@
 import {
-  useState,
   createContext,
-  ReactNode,
   Dispatch,
+  ReactNode,
   SetStateAction,
+  useState
 } from 'react'
 
 type ProjectsContextType = {
@@ -24,7 +24,7 @@ export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
     <ProjectsContext.Provider
       value={{
         currentFilter,
-        setCurrentFilter,
+        setCurrentFilter
       }}
     >
       {children}
