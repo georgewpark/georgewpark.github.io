@@ -19,7 +19,7 @@ const ProjectGrid = () => {
         const projectCategories = project.categories.join(' ')
 
         return (
-          <div
+          <article
             key={project.id}
             className={`projects-item ${projectCategories} ${showProject}`}
           >
@@ -56,7 +56,7 @@ const ProjectGrid = () => {
                 View Project
               </a>
             </div>
-          </div>
+          </article>
         )
       })}
     </div>
