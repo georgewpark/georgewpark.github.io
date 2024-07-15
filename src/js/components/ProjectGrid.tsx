@@ -39,7 +39,6 @@ const ProjectGrid = () => {
                   !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches
                 }
                 muted
-                loop
                 playsInline
                 aria-hidden='true'
               />
