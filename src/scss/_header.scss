@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  height: 100svh;
+  height: 100dvh;
   color: $white;
   text-align: center;
   text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
@@ -36,6 +36,7 @@
     object-fit: cover;
     z-index: -1;
     filter: contrast(0.6) brightness(0.3);
+    transition: 200ms;
   }
 
   &__headshot {
