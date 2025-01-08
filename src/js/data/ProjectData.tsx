@@ -236,6 +236,14 @@ export const projectList: Project[] = [
     categories: ['other']
   },
   {
+    id: 'ByBJBzp',
+    title: 'Star Wars Battlefront Zoom Loader',
+    description:
+      'Re-creating the zoom loading effect from the original Star Wars Battlefront game.',
+    video: 'battlefront-loader',
+    categories: ['other']
+  },
+  {
     id: 'abGmrmr',
     title: 'SVG Theming with currentColor',
     description:
@@ -249,7 +257,7 @@ export const projectList: Project[] = [
     description:
       'Using CSS radial gradients to create a focusable spotlight effect.',
     video: 'radial-gradient-spotlight',
-    categories: ['other']
+    categories: []
   },
   {
     id: 'QQZXNy',
