@@ -2,15 +2,18 @@ import { useContext } from 'react'
 import ProjectsContext from '../context/ProjectsContext'
 import { projectList } from '../data/ProjectData'
 
+const prefersReducedMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches
+
 const ProjectGrid = () => {
   const { currentFilter } = useContext(ProjectsContext)
+  const activeCategory = currentFilter.toLowerCase().replace(' ', '-')
 
   return (
     <div className='projects-gallery' aria-live='polite'>
       {projectList.map(project => {
-        const showProject = project.categories.includes(
-          currentFilter.toLowerCase().replace(' ', '-')
-        )
+        const showProject = project.categories.includes(activeCategory)
           ? 'show-item'
           : ''
         const projectUrl = project.github
@@ -35,9 +38,8 @@ const ProjectGrid = () => {
               <video
                 className='projects-item__video'
                 src={`/video/portfolio/${project.video}.mp4`}
-                autoPlay={
-                  !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches
-                }
+                preload='metadata'
+                autoPlay={!prefersReducedMotion}
                 muted
                 playsInline
                 aria-hidden='true'
