@@ -1,8 +1,7 @@
-@import '_reset';
-@import '_vars';
-@import '_base';
-@import '_header';
-@import '_about';
-@import '_projects';
-@import '_footer';
-@import '_animations';
+@use 'reset';
+@use 'base';
+@use 'header';
+@use 'about';
+@use 'projects';
+@use 'footer';
+@use 'animations';

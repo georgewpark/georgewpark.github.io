@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'vars' as *;
+
 .page-footer {
   padding: 1.5em 0;
   background-color: $black;
@@ -8,7 +11,7 @@
 
     &__link {
       display: block;
-      color: transparentize($white, 0.5);
+      color: color.adjust($white, $alpha: -0.5);
       padding: 0.5em 1.2em;
       transition: color 200ms;
 

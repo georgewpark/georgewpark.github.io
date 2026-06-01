@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'vars' as *;
+
 .projects {
   &-filter {
     display: flex;
@@ -40,10 +43,10 @@
     position: relative;
     height: 30em;
     border-radius: 0.5em;
-    border: 0.1em solid lighten($black, 13);
+    border: 0.1em solid color.adjust($black, $lightness: 13%);
     text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    background-color: lighten($black, 7);
+    background-color: color.adjust($black, $lightness: 7%);
     isolation: isolate;
 
     &::before {

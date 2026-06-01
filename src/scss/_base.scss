@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'vars' as *;
+
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -18,7 +21,10 @@ body {
 
 main {
   background-color: $dark-purple;
-  background-image: linear-gradient(darken($dark-purple, 4), $dark-purple);
+  background-image: linear-gradient(
+    color.adjust($dark-purple, $lightness: -4%),
+    $dark-purple
+  );
 }
 
 a {
@@ -90,14 +96,14 @@ strong {
 
   &--dark {
     @extend %btn;
-    color: darken($white, 7);
+    color: color.adjust($white, $lightness: -7%);
     border-color: $black;
-    background-color: lighten($black, 12);
+    background-color: color.adjust($black, $lightness: 12%);
 
     &:hover,
     &:focus {
       color: $white;
-      background-color: lighten($black, 2);
+      background-color: color.adjust($black, $lightness: 2%);
     }
 
     &[aria-current='true'] {
