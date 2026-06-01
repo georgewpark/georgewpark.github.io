@@ -9,7 +9,7 @@ const ProjectFilters = () => {
     <nav aria-label='projects navigation'>
       <ul className='projects-filter'>
         {filterList.map(filter => (
-          <li>
+          <li key={filter}>
             <button
               id={filter.toLowerCase().replace(' ', '-')}
               className={`projects-filter__btn btn--dark`}
