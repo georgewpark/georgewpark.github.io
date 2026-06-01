@@ -2,3 +2,4 @@
 /.tmp.drivedownload/
 /.tmp.driveupload/
 build/*/app.*.map
+/.claude
