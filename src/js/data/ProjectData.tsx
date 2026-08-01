@@ -13,6 +13,15 @@ export const filterList: string[] = [
 
 export const projectList: Project[] = [
   {
+    id: 'moonlander',
+    title: 'Moon Lander',
+    description:
+      'A physics-based game built with React Three Fiber. Manage your fuel, thrust, and trajectory to successfully land on the moon.',
+    video: 'moon-lander',
+    github: true,
+    categories: ['featured', 'react', '3d']
+  },
+  {
     id: 'erPRKg',
     title: 'Rick And Morty Character Search',
     description:
@@ -43,7 +52,7 @@ export const projectList: Project[] = [
     title: '3D Emoji Town',
     description: 'An animated 3D town created using emojis and pure CSS.',
     video: 'emoji-town',
-    categories: ['featured', 'emoji', '3d']
+    categories: ['emoji', '3d']
   },
   {
     id: 'bMWGRB',
