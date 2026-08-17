@@ -1,6 +1,6 @@
 {
   "short_name": "George Park",
-  "name": "George Park",
+  "name": "George W. Park | Front-End Web Developer",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -8,12 +8,13 @@
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-384x384.png",
-      "sizes": "384x384",
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "theme_color": "#2c3477",
-  "background_color": "#2c3477",
+  "start_url": "/",
+  "theme_color": "#08080b",
+  "background_color": "#08080b",
   "display": "standalone"
 }

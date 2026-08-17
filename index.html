@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <!-- Metadata -->
     <meta charset="UTF-8" />
@@ -19,6 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="George Park" />
     <meta name="format-detection" content="telephone=no" />
+    <meta name="color-scheme" content="dark" />
     <link rel="canonical" href="https://georgewpark.com/" />
 
     <!-- Facebook Open Graph -->
@@ -75,125 +76,234 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="msapplication-TileColor" content="#2c3477" />
+    <meta name="msapplication-TileColor" content="#08080b" />
     <meta name="msapplication-TileImage" content="mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#2c3477" />
+    <meta name="theme-color" content="#08080b" />
 
-    <!-- External CSS Files -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/build/css/app.css" />
 
-    <!-- External JavaScript File -->
-    <script src="/build/js/app.js" defer></script>
+    <!-- External CSS & JavaScript Files -->
+    <link rel="stylesheet" href="/build/css/app.css" />
+    <script type="module" src="/build/js/app.js"></script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
-    <header class="page-header">
-      <div class="container">
-        <img
-          srcset="
-            images/header-500w.jpg   500w,
-            images/header-1000w.jpg 1200w,
-            images/header-2000w.jpg 2000w
-          "
-          sizes="(max-width: 500px) 480px, (max-width: 1200px) 1000px, 2000px"
-          src="images/header.jpg"
-          alt=""
-          class="page-header__image"
-        />
-        <img src="/images/headshot.jpg" alt="" class="page-header__headshot" />
-        <h1 class="page-header__heading">George W. Park</h1>
-        <h2 class="page-header__subheading">Front-End Web Developer</h2>
+    <header
+      class="sticky top-0 z-50 border-b border-line/70 bg-canvas/85 backdrop-blur-md"
+    >
+      <div class="container-page flex h-16 items-center justify-between gap-4">
         <a
-          href="#main"
-          aria-label="Go to main content"
-          class="main-content-link"
+          href="#top"
+          class="inline-flex min-h-11 items-center text-base font-bold tracking-tight text-fg"
         >
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 14.414-5.707-5.707 1.414-1.414L12 13.586l4.293-4.293 1.414 1.414L12 16.414z"
-            />
-          </svg>
+          George W. Park
         </a>
+        <nav aria-label="Primary">
+          <ul class="flex items-center gap-1 sm:gap-2">
+            <li>
+              <a
+                href="#about"
+                class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <!-- Main Content -->
-    <main id="main">
-      <!-- About Section -->
-      <section class="section about-section" id="about">
-        <div class="container">
-          <h2 class="section__heading">About</h2>
-          <p>
-            Hello! I'm George, a <strong>front-end web developer</strong> based
-            in Scotland.
-          </p>
-          <p>
-            I specialise in building dynamic user interfaces using modern web
-            technologies with a focus on usability, accessibility, and
-            performance.
-          </p>
-          <p>
-            I frequently post my experiments with front-end technologies to
-            <a
-              href="https://codepen.io/GeorgePark/pens/popular/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >CodePen</a
+
+    <main id="main" tabindex="-1">
+      <!-- Hero Section -->
+      <section id="top" class="relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          class="glow pointer-events-none absolute inset-x-0 -top-56 h-160"
+        ></div>
+        <div
+          class="container-page relative grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-[1.4fr_1fr]"
+        >
+          <div class="justify-self-center lg:order-last lg:justify-self-end">
+            <img
+              src="/images/headshot.jpg"
+              alt=""
+              width="320"
+              height="320"
+              fetchpriority="high"
+              decoding="async"
+              class="size-44 rounded-full border-2 border-line-strong object-cover sm:size-56 lg:size-72"
+            />
+          </div>
+          <div>
+            <h1
+              class="text-5xl font-bold tracking-tighter text-fg sm:text-6xl lg:text-7xl"
             >
-            and
-            <a
-              href="https://github.com/georgewpark?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >.
-          </p>
-          <p>
-            If you're interested in working with me or have any questions then
-            don't hesitate to
-            <a href="mailto:georgeparkdev@outlook.com">contact me</a>.
-          </p>
+              George W. Park
+            </h1>
+            <p
+              class="mt-4 text-2xl font-semibold tracking-tight text-accent sm:text-3xl"
+            >
+              Front-end web developer
+            </p>
+            <div class="mt-9 flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-primary">View projects</a>
+              <a href="#contact" class="btn btn-secondary">Get in touch</a>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- About Section -->
+      <section id="about" class="border-t border-line py-20 sm:py-24">
+        <div class="container-page">
+          <div class="max-w-2xl">
+            <span class="section-eyebrow">About</span>
+            <h2 class="section-heading">Hello, I'm George</h2>
+            <div class="prose-body mt-6 space-y-4">
+              <p>
+                I'm a <strong>front-end web developer</strong> based in
+                Scotland. I specialise in building dynamic user interfaces using
+                modern web technologies, with a focus on usability,
+                accessibility and performance.
+              </p>
+              <p>
+                I frequently post my experiments with front-end technologies to
+                <a
+                  href="https://codepen.io/GeorgePark/pens/popular/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CodePen</a
+                >
+                and
+                <a
+                  href="https://github.com/georgewpark?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >.
+              </p>
+            </div>
+          </div>
+
+          <ul class="mt-12 grid list-none gap-5 sm:grid-cols-3">
+            <li class="rounded-card border border-line bg-surface p-6">
+              <h3 class="text-base font-semibold text-fg">Usability</h3>
+              <p class="mt-2 text-sm/relaxed text-fg-muted">
+                Interfaces that behave the way people expect, on any device.
+              </p>
+            </li>
+            <li class="rounded-card border border-line bg-surface p-6">
+              <h3 class="text-base font-semibold text-fg">Accessibility</h3>
+              <p class="mt-2 text-sm/relaxed text-fg-muted">
+                Semantic markup, keyboard support and WCAG 2.2 AA as the
+                baseline.
+              </p>
+            </li>
+            <li class="rounded-card border border-line bg-surface p-6">
+              <h3 class="text-base font-semibold text-fg">Performance</h3>
+              <p class="mt-2 text-sm/relaxed text-fg-muted">
+                Lean bundles, lazy media and no work the browser does not need.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Projects Section -->
-      <section class="section projects-section" id="projects"></section>
+      <section id="projects" class="border-t border-line py-20 sm:py-24">
+        <div id="projects-root"></div>
+        <noscript>
+          <div class="container-page">
+            <span class="section-eyebrow">Selected work</span>
+            <h2 class="section-heading">Projects</h2>
+            <p class="prose-body mt-4 max-w-2xl">
+              The project gallery needs JavaScript. You can browse everything
+              directly on
+              <a
+                href="https://codepen.io/GeorgePark/pens/popular/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CodePen</a
+              >
+              and
+              <a
+                href="https://github.com/georgewpark?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >.
+            </p>
+          </div>
+        </noscript>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="border-t border-line py-20 sm:py-24">
+        <div class="container-page max-w-2xl text-center">
+          <span class="section-eyebrow">Contact</span>
+          <h2 class="section-heading">Let's work together</h2>
+          <p class="prose-body mt-4">
+            If you're interested in working with me, or you have a question,
+            don't hesitate to get in touch.
+          </p>
+          <a
+            href="mailto:georgeparkdev@outlook.com"
+            class="btn btn-primary mt-8"
+          >
+            georgeparkdev@outlook.com
+          </a>
+        </div>
+      </section>
     </main>
+
     <!-- Footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <!-- Social Links -->
-        <nav aria-label="social">
-          <ul class="social-links">
+    <footer class="border-t border-line py-12">
+      <div
+        class="container-page flex flex-col items-center gap-8 sm:flex-row sm:justify-between"
+      >
+        <nav aria-label="Social links">
+          <ul class="flex flex-wrap items-center justify-center gap-3">
             <li>
               <a
                 href="https://codepen.io/GeorgePark/pens/popular"
-                aria-label="CodePen"
+                aria-label="CodePen (opens in a new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-links__link"
+                class="icon-link"
               >
                 <svg
-                  class="social-links__icon"
-                  width="24px"
-                  height="24px"
+                  width="22"
+                  height="22"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     d="m2.893 15.656 8.076 5.384v-4.808l-4.474-2.986zm-.831-1.928 2.585-1.728-2.585-1.728zm10.969 7.312 8.076-5.384-3.6-2.41-4.476 2.986zm-1.031-6.602 3.643-2.438-3.643-2.438-3.643 2.438zm-5.505-3.68 4.474-2.99v-4.808l-8.076 5.384zm12.858 1.242 2.585 1.728v-3.456zm-1.848-1.246 3.6-2.41-8.074-5.384v4.808zm6.495-2.41v7.312.03c0 .346-.18.651-.452.825l-.004.002-10.969 7.313c-.162.109-.361.174-.576.174s-.414-.065-.58-.176l.004.002-10.969-7.312c-.276-.176-.456-.481-.456-.827 0-.011 0-.021.001-.032v.002-7.312c0-.009 0-.02 0-.031 0-.346.18-.651.452-.825l.004-.002 10.969-7.312c.162-.109.361-.174.576-.174s.414.065.58.176l-.004-.002 10.969 7.312c.276.176.456.481.456.827 0 .011 0 .021-.001.032z"
@@ -204,19 +314,19 @@
             <li>
               <a
                 href="https://github.com/georgewpark?tab=repositories"
-                aria-label="GitHub"
+                aria-label="GitHub (opens in a new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-links__link"
+                class="icon-link"
               >
                 <svg
-                  class="social-links__icon"
-                  width="32px"
-                  height="32px"
+                  width="22"
+                  height="22"
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
@@ -227,50 +337,45 @@
             <li>
               <a
                 href="https://twitter.com/GeorgePark_"
-                aria-label="Twitter"
+                aria-label="X, formerly Twitter (opens in a new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-links__link"
+                class="icon-link"
               >
                 <svg
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
                   aria-hidden="true"
-                  class="social-links__icon"
+                  focusable="false"
                 >
-                  <g>
-                    <path
-                      d="M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.523.945 1.328 7.91 11.078h-3.246zm0 0"
-                      fill="currentColor"
-                    ></path>
-                  </g>
+                  <path
+                    d="M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.523.945 1.328 7.91 11.078h-3.246zm0 0"
+                  />
                 </svg>
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/georgewpark/"
-                aria-label="LinkedIn"
+                aria-label="LinkedIn (opens in a new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="social-links__link"
+                class="icon-link"
               >
                 <svg
-                  class="social-links__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
+                  width="22"
+                  height="22"
                   viewBox="0 0 504.4 504.4"
-                  style="enable-background: new 0 0 504.4 504.4"
-                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   aria-hidden="true"
+                  focusable="false"
                 >
                   <path
-                    d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
-                  C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
-                  c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
-                  c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"
+                    d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6 C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8 c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6 c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"
                   />
                 </svg>
               </a>
@@ -278,32 +383,32 @@
             <li>
               <a
                 href="mailto:georgeparkdev@outlook.com"
-                aria-label="Email me"
-                class="social-links__link"
+                aria-label="Email George"
+                class="icon-link"
               >
                 <svg
-                  class="social-links__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
+                  width="22"
+                  height="22"
                   viewBox="0 0 400 400"
-                  style="enable-background: new 0 0 400 400"
-                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   aria-hidden="true"
+                  focusable="false"
                 >
-                  <polygon points="0,127.5 0,274.219 104.8,206.1 	" />
-                  <polygon points="400,274.219 400,127.5 295.2,206.1 	" />
+                  <polygon points="0,127.5 0,274.219 104.8,206.1" />
+                  <polygon points="400,274.219 400,127.5 295.2,206.1" />
                   <polygon
-                    points="200,277.5 130.357,225.268 0,310 0,340 400,340 400,310 269.643,225.268 	"
+                    points="200,277.5 130.357,225.268 0,310 0,340 400,340 400,310 269.643,225.268"
                   />
-                  <polygon points="0,90 200,240 400,90 400,60 0,60 	" />
+                  <polygon points="0,90 200,240 400,90 400,60 0,60" />
                 </svg>
               </a>
             </li>
           </ul>
         </nav>
+        <p class="text-center text-sm text-fg-muted sm:text-right">
+          Built by George W. Park with React, Vite and Tailwind CSS.
+        </p>
       </div>
     </footer>
   </body>

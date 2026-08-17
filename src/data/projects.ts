@@ -1,17 +1,17 @@
-import { Project } from '../types/types'
+import type { Filter, Project } from '../types'
 
-export const filterList: string[] = [
-  'Featured',
-  'Layout',
-  'React',
-  'Speech',
-  'Emoji',
-  '3D',
-  'Text Effects',
-  'Other'
+export const filters: Filter[] = [
+  { id: 'featured', label: 'Featured' },
+  { id: 'layout', label: 'Layout' },
+  { id: 'react', label: 'React' },
+  { id: 'speech', label: 'Speech' },
+  { id: 'emoji', label: 'Emoji' },
+  { id: '3d', label: '3D' },
+  { id: 'text-effects', label: 'Text effects' },
+  { id: 'other', label: 'Other' }
 ]
 
-export const projectList: Project[] = [
+export const projects: Project[] = [
   {
     id: 'moonlander',
     title: 'Moon Lander',
@@ -333,3 +333,12 @@ export const projectList: Project[] = [
     categories: []
   }
 ]
+
+export const visibleProjects = projects.filter(
+  project => project.categories.length > 0
+)
+
+export const projectUrl = (project: Project) =>
+  project.github
+    ? `https://github.com/georgewpark/${project.title.split(' ').join('-')}/`
+    : `https://cdpn.io/${project.id}/`
