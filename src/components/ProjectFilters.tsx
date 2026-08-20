@@ -17,10 +17,11 @@ const ProjectFilters = ({ current, onChange }: ProjectFiltersProps) => (
         key={filter.id}
         type='button'
         className='chip'
+        data-label={filter.label}
         aria-pressed={filter.id === current}
         onClick={() => onChange(filter.id)}
       >
-        {filter.label}
+        <span>{filter.label}</span>
       </button>
     ))}
   </div>

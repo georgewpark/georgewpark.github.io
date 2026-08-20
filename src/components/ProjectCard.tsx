@@ -1,7 +1,11 @@
 import { useCallback, useRef } from 'react'
 import { projectUrl } from '../data/projects'
+import { useNearViewport } from '../hooks/useNearViewport'
 import type { Project } from '../types'
 import { ExternalLinkIcon } from './icons'
+
+const SLOT_WIDTH = 800
+const SLOT_HEIGHT = 500
 
 type ProjectCardProps = {
   project: Project
@@ -9,7 +13,9 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
+  const cardRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const isNear = useNearViewport(cardRef)
   const host = project.github ? 'GitHub' : 'CodePen'
 
   const playPreview = useCallback(() => {
@@ -29,7 +35,8 @@ const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
 
   return (
     <article
-      className='group relative flex w-full flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 ease-out-soft hover:border-line-strong focus-within:border-line-strong'
+      ref={cardRef}
+      className='project-card group relative flex w-full flex-col overflow-hidden rounded-card bg-surface'
       onMouseEnter={playPreview}
       onMouseLeave={pausePreview}
       onFocus={playPreview}
@@ -42,15 +49,17 @@ const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
             alt=''
             loading='lazy'
             decoding='async'
-            width={800}
-            height={500}
+            width={SLOT_WIDTH}
+            height={SLOT_HEIGHT}
             className='size-full object-cover'
           />
         )}
         {project.video && (
           <video
             ref={videoRef}
-            src={`/video/portfolio/${project.video}.mp4`}
+            src={isNear ? `/video/portfolio/${project.video}.mp4` : undefined}
+            width={SLOT_WIDTH}
+            height={SLOT_HEIGHT}
             preload='metadata'
             muted
             loop
@@ -77,7 +86,7 @@ const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
           href={projectUrl(project)}
           target='_blank'
           rel='noopener noreferrer'
-          className='mt-1 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-accent underline decoration-1 underline-offset-4 transition-colors duration-200 ease-out-soft hover:text-accent-hover'
+          className='project-card-link mt-1 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold underline decoration-1 underline-offset-4'
         >
           View on {host}
           <span className='sr-only'>

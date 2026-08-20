@@ -14,7 +14,7 @@ npm run build    # type-check, then compile to /build
 | ------------------- | ---------------------------------------------- |
 | `npm run dev`       | Vite dev server with HMR                       |
 | `npm run build`     | `tsc --noEmit` then `vite build` into `/build` |
-| `npm run preview`   | Serves the compiled `/build` output            |
+| `npm run preview`   | Serves the repo root, as GitHub Pages does     |
 | `npm run typecheck` | Type-check only                                |
 | `npm run format`    | Prettier across the project                    |
 
@@ -51,7 +51,7 @@ src/
   types.ts            Project and Filter types
   data/projects.ts    The project list and category filters
   components/         Projects, ProjectFilters, ProjectCard, icons
-  hooks/              useReducedMotion
+  hooks/              useReducedMotion, useNearViewport
 build/                Compiled output. Generated — commit it, don't edit it.
 images/ video/        Project media, served straight from the repo
 ```
@@ -65,7 +65,7 @@ Add an entry to `projects` in [`src/data/projects.ts`](src/data/projects.ts):
 
 ```ts
 {
-  id: 'abc123',            // CodePen pen id, or the repo slug when github: true
+  id: 'abc123',            // CodePen pen id, and the React key
   title: 'Project Name',
   description: 'One or two sentences.',
   image: 'file-name',      // images/portfolio/file-name.jpg
@@ -74,6 +74,10 @@ Add an entry to `projects` in [`src/data/projects.ts`](src/data/projects.ts):
   categories: ['featured', 'react']
 }
 ```
+
+CodePen projects link to `cdpn.io/<id>/`. Projects with `github: true` link
+to `github.com/georgewpark/<title-with-spaces-hyphenated>` instead, so renaming
+a title changes the repo the link expects. `id` is not used to build that URL.
 
 Every project needs at least one category. A project with an empty
 `categories` array is treated as retired and is never rendered under any

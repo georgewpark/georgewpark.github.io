@@ -1,7 +1,9 @@
 @import 'tailwindcss' source(none);
 
 @source '../index.html';
-@source './';
+@source './**/*.tsx';
+
+@source not inline("{container,visible,outline}");
 
 @theme {
   --font-sans:
@@ -50,7 +52,6 @@
   :focus-visible {
     outline: 3px solid var(--color-focus);
     outline-offset: 3px;
-    border-radius: 0.25rem;
   }
 
   :focus:not(:focus-visible) {
@@ -126,6 +127,29 @@
     transform: translateY(0);
   }
 
+  .card {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    background-color: var(--color-surface);
+    padding: 1.5rem;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding-inline: 0.75rem;
+    border-radius: var(--radius-lg);
+    color: var(--color-fg-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 200ms var(--ease-out-soft);
+  }
+
+  .nav-link:hover {
+    color: var(--color-fg);
+  }
+
   .btn {
     display: inline-flex;
     align-items: center;
@@ -164,9 +188,18 @@
     background-color: color-mix(in oklab, var(--color-accent) 12%, transparent);
   }
 
+  .btn-secondary.btn-on-photo {
+    border-color: var(--color-fg-muted);
+  }
+
+  .btn-secondary.btn-on-photo:hover {
+    border-color: var(--color-accent-hover);
+  }
+
   .chip {
-    display: inline-flex;
-    align-items: center;
+    display: inline-grid;
+    grid-template-areas: 'label';
+    place-items: center;
     min-height: 2.5rem;
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-line-control);
@@ -181,6 +214,17 @@
       border-color 200ms var(--ease-out-soft);
   }
 
+  .chip > span,
+  .chip::after {
+    grid-area: label;
+  }
+
+  .chip::after {
+    content: attr(data-label);
+    font-weight: 600;
+    visibility: hidden;
+  }
+
   .chip:hover {
     border-color: var(--color-fg-muted);
     color: var(--color-fg);
@@ -191,6 +235,40 @@
     background-color: var(--color-accent-strong);
     color: var(--color-fg);
     font-weight: 600;
+  }
+
+  @media (forced-colors: active) {
+    .chip[aria-pressed='true'] {
+      forced-color-adjust: none;
+      border-color: Highlight;
+      background-color: Highlight;
+      color: HighlightText;
+    }
+  }
+
+  .project-card {
+    border: 1px solid var(--color-line);
+    transition: border-color 300ms var(--ease-out-soft);
+  }
+
+  .project-card:hover,
+  .project-card:focus-within {
+    border-color: var(--color-line-control);
+  }
+
+  .project-card-link {
+    color: var(--color-accent);
+    transition: color 200ms var(--ease-out-soft);
+  }
+
+  .project-card-link:hover {
+    color: var(--color-accent-hover);
+  }
+
+  .project-card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
   }
 
   .icon-link {
@@ -230,10 +308,11 @@
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
+    transition: color 200ms var(--ease-out-soft);
   }
 
   .prose-body a:hover {
-    text-decoration-thickness: 2px;
+    color: var(--color-accent-hover);
   }
 
   .section-eyebrow {

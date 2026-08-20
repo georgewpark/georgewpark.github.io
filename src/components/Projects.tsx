@@ -8,7 +8,13 @@ import { SearchOffIcon } from './icons'
 
 const Projects = () => {
   const [current, setCurrent] = useState<CategoryId>('featured')
+  const [hasFiltered, setHasFiltered] = useState(false)
   const prefersReducedMotion = useReducedMotion()
+
+  const handleChange = (id: CategoryId) => {
+    setCurrent(id)
+    setHasFiltered(true)
+  }
 
   const visible = useMemo(
     () =>
@@ -30,12 +36,14 @@ const Projects = () => {
       </div>
 
       <div className='mt-10'>
-        <ProjectFilters current={current} onChange={setCurrent} />
+        <ProjectFilters current={current} onChange={handleChange} />
       </div>
 
       <p role='status' className='sr-only'>
-        Showing {visible.length} {visible.length === 1 ? 'project' : 'projects'}{' '}
-        in {currentLabel}.
+        {hasFiltered &&
+          `Showing ${visible.length} ${
+            visible.length === 1 ? 'project' : 'projects'
+          } in ${currentLabel}.`}
       </p>
 
       {visible.length > 0 ? (

@@ -3,3 +3,5 @@
 /.tmp.driveupload/
 /.claude
 /node_modules/.vite
+
+*.bak
