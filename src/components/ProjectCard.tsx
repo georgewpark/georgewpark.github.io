@@ -7,6 +7,10 @@ import { ExternalLinkIcon } from './icons'
 const SLOT_WIDTH = 800
 const SLOT_HEIGHT = 500
 
+// Mobile browsers will not paint a frame from metadata alone, so seek slightly
+// in to force one to decode. Doubles as the reset point after a preview.
+const PREVIEW_START = 0.1
+
 type ProjectCardProps = {
   project: Project
   prefersReducedMotion: boolean
@@ -30,7 +34,7 @@ const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
     if (!video) return
 
     video.pause()
-    video.currentTime = 0
+    video.currentTime = PREVIEW_START
   }, [])
 
   return (
@@ -57,7 +61,11 @@ const ProjectCard = ({ project, prefersReducedMotion }: ProjectCardProps) => {
         {project.video && (
           <video
             ref={videoRef}
-            src={isNear ? `/video/portfolio/${project.video}.mp4` : undefined}
+            src={
+              isNear
+                ? `/video/portfolio/${project.video}.mp4#t=${PREVIEW_START}`
+                : undefined
+            }
             width={SLOT_WIDTH}
             height={SLOT_HEIGHT}
             preload='metadata'
