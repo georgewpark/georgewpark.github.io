@@ -147,6 +147,7 @@
           <div
             class="absolute inset-0 bg-linear-to-b from-canvas/60 via-transparent to-canvas"
           ></div>
+          <div class="grain absolute inset-0"></div>
         </div>
         <div
           class="container-page relative grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-[1.4fr_1fr]"
@@ -184,17 +185,26 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="border-t border-line py-20 sm:py-24">
-        <div class="container-page">
-          <div class="max-w-2xl">
+      <section id="about" class="section section-divided section-band">
+        <div
+          aria-hidden="true"
+          class="dot-grid pointer-events-none absolute inset-0"
+        ></div>
+        <div
+          class="container-page relative grid items-start gap-12 lg:grid-cols-2 lg:gap-20"
+        >
+          <div>
             <span class="section-eyebrow">About</span>
             <h2 class="section-heading">Hello, I'm George</h2>
             <div class="prose-body mt-6 space-y-4">
               <p>
                 I'm a <strong>front-end web developer</strong> based in
-                Scotland. I specialise in building dynamic user interfaces using
-                modern web technologies, with a focus on usability,
-                accessibility and performance.
+                Scotland.
+              </p>
+              <p>
+                I specialise in building dynamic user interfaces using modern
+                web technologies, with a focus on usability, accessibility and
+                performance.
               </p>
               <p>
                 I frequently post my experiments with front-end technologies to
@@ -215,23 +225,23 @@
             </div>
           </div>
 
-          <ul class="mt-12 grid list-none gap-5 sm:grid-cols-3">
-            <li class="card">
+          <ul class="list-none lg:pt-3">
+            <li class="principle">
               <h3 class="text-base font-semibold text-fg">Usability</h3>
-              <p class="mt-2 text-sm/relaxed text-fg-muted">
+              <p class="mt-1.5 text-sm/relaxed text-fg-muted">
                 Interfaces that behave the way people expect, on any device.
               </p>
             </li>
-            <li class="card">
+            <li class="principle">
               <h3 class="text-base font-semibold text-fg">Accessibility</h3>
-              <p class="mt-2 text-sm/relaxed text-fg-muted">
+              <p class="mt-1.5 text-sm/relaxed text-fg-muted">
                 Semantic markup, keyboard support and WCAG 2.2 AA as the
                 baseline.
               </p>
             </li>
-            <li class="card">
+            <li class="principle">
               <h3 class="text-base font-semibold text-fg">Performance</h3>
-              <p class="mt-2 text-sm/relaxed text-fg-muted">
+              <p class="mt-1.5 text-sm/relaxed text-fg-muted">
                 Lean bundles, lazy media and no work the browser does not need.
               </p>
             </li>
@@ -240,7 +250,7 @@
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="border-t border-line py-20 sm:py-24">
+      <section id="projects" class="section section-divided">
         <div id="projects-root"></div>
         <noscript>
           <div class="container-page">
@@ -268,26 +278,42 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="border-t border-line py-20 sm:py-24">
-        <div class="container-page max-w-2xl text-center">
-          <span class="section-eyebrow">Contact</span>
-          <h2 class="section-heading">Let's work together</h2>
-          <p class="prose-body mt-4">
-            If you're interested in working with me, or you have a question,
-            don't hesitate to get in touch.
-          </p>
-          <a
-            href="mailto:georgeparkdev@outlook.com"
-            class="btn btn-primary mt-8"
-          >
-            georgeparkdev@outlook.com
-          </a>
+      <section id="contact" class="section section-divided">
+        <div class="container-page">
+          <div class="panel mx-auto max-w-3xl text-center">
+            <div
+              aria-hidden="true"
+              class="glow pointer-events-none absolute inset-x-0 -top-32 h-96"
+            ></div>
+            <div
+              aria-hidden="true"
+              class="grain pointer-events-none absolute inset-0"
+            ></div>
+            <div class="relative">
+              <span class="section-eyebrow section-eyebrow-centred">
+                Contact
+              </span>
+              <h2 class="section-heading section-heading-lead">
+                Let's work together
+              </h2>
+              <p class="prose-body mx-auto mt-4 max-w-xl">
+                If you're interested in working with me, or you have a question,
+                don't hesitate to get in touch.
+              </p>
+              <a
+                href="mailto:georgeparkdev@outlook.com"
+                class="btn btn-primary mt-8"
+              >
+                georgeparkdev@outlook.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-line py-12">
+    <footer class="section-divided relative py-12">
       <div
         class="container-page flex flex-col items-center gap-8 sm:flex-row sm:justify-between"
       >

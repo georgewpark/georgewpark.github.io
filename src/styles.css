@@ -30,6 +30,7 @@
   --color-focus: #7ff3f9;
 
   --radius-card: 0.875rem;
+  --radius-panel: 1.5rem;
 
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -127,6 +128,46 @@
     transform: translateY(0);
   }
 
+  /* Section scaffolding */
+
+  .section {
+    position: relative;
+    padding-block: 5rem;
+  }
+
+  @media (width >= 40rem) {
+    .section {
+      padding-block: 6.5rem;
+    }
+  }
+
+  /* Hairline that fades at both ends, instead of an edge-to-edge border. */
+  .section-divided::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      var(--color-line-strong) 22%,
+      var(--color-line-strong) 78%,
+      transparent
+    );
+  }
+
+  /* Lifts a section off the page ground without a hard-edged box. */
+  .section-band {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-canvas),
+      color-mix(in oklab, var(--color-surface) 88%, var(--color-canvas)) 22%,
+      color-mix(in oklab, var(--color-surface) 88%, var(--color-canvas)) 78%,
+      var(--color-canvas)
+    );
+  }
+
   .card {
     border: 1px solid var(--color-line);
     border-radius: var(--radius-card);
@@ -134,7 +175,28 @@
     padding: 1.5rem;
   }
 
+  .panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-panel);
+    background-color: var(--color-surface);
+    padding: 3rem 1.5rem;
+  }
+
+  @media (width >= 40rem) {
+    .panel {
+      padding: 4rem 3rem;
+    }
+  }
+
+  /* Accent sits on a lifted ground inside a panel, so step the tone up. */
+  .panel .section-eyebrow {
+    color: var(--color-accent-hover);
+  }
+
   .nav-link {
+    position: relative;
     display: inline-flex;
     align-items: center;
     min-height: 2.75rem;
@@ -146,8 +208,26 @@
     transition: color 200ms var(--ease-out-soft);
   }
 
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0.75rem;
+    bottom: 0.5rem;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-accent);
+    scale: 0 1;
+    transform-origin: left center;
+    transition: scale 250ms var(--ease-out-soft);
+  }
+
   .nav-link:hover {
     color: var(--color-fg);
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after {
+    scale: 1 1;
   }
 
   .btn {
@@ -246,6 +326,31 @@
     }
   }
 
+  /* About */
+
+  .principle {
+    position: relative;
+    padding-block: 1.5rem;
+    padding-inline-start: 1.875rem;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .principle:last-child {
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .principle::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 2.1rem;
+    width: 0.875rem;
+    height: 1px;
+    background-color: var(--color-accent);
+  }
+
+  /* Projects */
+
   .project-card {
     border: 1px solid var(--color-line);
     transition: border-color 300ms var(--ease-out-soft);
@@ -292,6 +397,8 @@
     color: var(--color-accent);
   }
 
+  /* Type */
+
   .prose-body {
     color: var(--color-fg-muted);
     font-size: 1.0625rem;
@@ -316,13 +423,30 @@
   }
 
   .section-eyebrow {
-    display: inline-block;
-    margin-bottom: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.875rem;
     color: var(--color-accent);
     font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+  }
+
+  .section-eyebrow::after {
+    content: '';
+    width: 2.75rem;
+    height: 1px;
+    background-image: linear-gradient(to right, currentColor, transparent);
+  }
+
+  /* Centred eyebrows get a matching rule on the left, so they stay balanced. */
+  .section-eyebrow-centred::before {
+    content: '';
+    width: 2.75rem;
+    height: 1px;
+    background-image: linear-gradient(to left, currentColor, transparent);
   }
 
   .section-heading {
@@ -331,7 +455,13 @@
     letter-spacing: -0.02em;
     line-height: 1.1;
   }
+
+  .section-heading-lead {
+    font-size: clamp(2.125rem, 1.5rem + 2.6vw, 3.25rem);
+  }
 }
+
+/* Decorative layers */
 
 @utility glow {
   background-image: radial-gradient(
@@ -339,4 +469,28 @@
     color-mix(in oklab, var(--color-accent-glow) 22%, transparent),
     transparent 70%
   );
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(
+    circle at center,
+    var(--color-line) 1px,
+    transparent 1.5px
+  );
+  background-size: 1.5rem 1.5rem;
+  -webkit-mask-image: radial-gradient(
+    ellipse 65% 75% at 12% 0%,
+    black,
+    transparent 72%
+  );
+  mask-image: radial-gradient(
+    ellipse 65% 75% at 12% 0%,
+    black,
+    transparent 72%
+  );
+}
+
+@utility grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
 }
